@@ -1,0 +1,10 @@
+{
+    "name":"crud",
+    "version": "1.0.0",
+    "description": "This is Crud Application",
+    "dependencies": {
+        "mongoose":"5.10.11",
+        "console.table":"0.10.0"
+    }
+    
+}
