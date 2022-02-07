@@ -1,0 +1,69 @@
+Basic Concept Related to Programming:-
+**************************************
+1. How to create Folder dynamically via date using cmd
+ mkdir %date%
+ 
+Concept 1:-  a folder name cannot cantain, Illegal Character
+like \,/,?,*,"",|,:,<>
+
+if while running the command, mkdir %date%  if you get an error,
+incorrect syntax error
+make sure you date format does not contain illegal character
+\,/,?,*,"",|,:,<>
+
+Basic Story:-
+php is a our technology, and php is a server side langauge.
+why not php will execute on the browser
+
+https://www.facebook.com/ :resource
+file:///C:/Users/Abhay%20Singh/Desktop/App-2021/PHP/home.html : resource
+1. According to cleint server model
+2. Any thing which is loaded by client(Browser) will be called as resource
+
+https://www.facebook.com/1.png : resource
+Common Terms used in Web Tech:-
+1. Human (End user)
+2. (God) (Server)
+3. Prayer (Request)
+4. (Blessing) (Response)
+
+How End user going to make a Request:-
+End user will make a request using url
+End User will use Browser as a Interface(Plateform) to make a Request by using url
+How many types of request are there:-
+1. Synchronous Request : PHP,python,.net,jsp,...etc
+2. Asynchronous Request : Ajax,Node.js
+
+Synchronous Request : A request in which one event depends on other request to happen such type of request is called
+Synchronous request. These request are blocking in nature.
+For Example:-
+1. Js ----> window.alert();
+2. PHP ----> form submit
+
+Asynchronous Request : A request in which one event does not depend upon other event such type of request is called as a synchronous request, These request are non-blocking in nature.
+
+1. Node.js ----> window.alert();
+	R1------------> wait
+	R2 -----------> Process ---> Success
+	R3 -----> wait
+	R4 -----------> process ----> Success
+	
+2. PHP 
+	R1------------> wait ---> success
+	R2---------> wait ---> process ---> success
+	R3----> wait ----> process ---> success
+	R4--> wait ---> process
+	
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,495 @@
+Introduction to Oops:-
+***********************
+In Earlier days, in order to write the bigger bigger logic we used 
+two Approaches to write the code.
+
+1. mono-lithic Approach : when we write the code, in single script itself.
+
+2. poly-lithic Approach : when we write the entire code, as a group of 
+small small script then it is called as Poly-lithic Approach
+	1. Using Functional Approach.
+	2. Using Object Oriented Approach.
+	3. Using Modular Approach
+	4. and Other Approach 
+	These All approaches for writing the code, is called as,
+	Programming Paradigm or Methodologies, or Descipline, or Technique,
+	Programming Mechanism.
+What is Object Oriented Programming System?
+1. It is a Programming Paradigm or Mechanism for developing Software of
+Highly Scalable Application.	
+
+Object Oriented Programming Langauge:-
+Any Programming Langauge which can provide oops support, with all features
+ Implement by OOps that langauge is called as OOPL.(Object Oriented Programming Langauge)
+ 
+Eg : C++,Java,C#,PHP,python....
+
+Pillars of Object Oriented Programming Langauge
+************************************************
+
+1. Encapsulation.
+2. Data Hiding.
+3. Data Abstraction.
+4. Abstraction.
+5. Inheritance.
+6. has-Relationship.
+7. is-Relationship.
+8. Class and Objects.
+9. Polymorphism.
+10. Dependency Injection.
+11. Exception Handling.
+
+After the Object Oriented Programming System has left its scope: it leaves
+some Elements as a scrap. The Elements are then Re-used and Converted 
+into Re-usable Components are There Re-usable Components of, OOps are
+called as Design Patterns.
+There are Total 23 Design Pattern (Re-usable Components)
+1. Structural
+	1. Decorator
+	2. Bridge
+	3. Adaptor
+	4. Flywieght
+	5. Facade
+	6. composite
+	7. proxy
+2. Behavioural
+	...
+3. Creational
+	...
+	
+These are written 4 Writers and Called as Gang-of-4.
+
+Advantage of Oops:-
+********************
+
+1. Easy to Understand.
+2. Bottom to Top Approach.
+3. Security.
+4. Reusability.
+5. Scope and Memory Management.
+6. Standarisation.
+
+1. IS php a Object Oriented Langauge? Yes over-view Detail No
+2. IS Java a Object Oriented Langauge? Yes over-view Detail No
+3. IS c#(.net) a Object Oriented Langauge? Yes over-view Detail No
+4. IS python a Object Oriented Langauge? Yes over-view Detail No
+5. IS C++ a Object Oriented Langauge? Yes over-view Detail No
+5. IS smalltalk a Object Oriented Langauge? Yes over-view Detail Yes
+
+Any  Programming is said to fully Oops Based if it does not have, primitive datatype. and if it has then it should be on the Basis of, Class and Object.
+
+How to make a class and Object in php program
+
+Basic Terms Related to Oops
+1. Class : is a collection of varaible and methods.
+
+   varaible --> Data member.
+   methods ---> member function.
+   
+   class is a collection data member and member function
+   variable : attributes,states,properties
+   methods : behaviour, actions, features,functions
+   
+Objects : its real existing Entity, any thing which exist physically is a Object.
+A Object is also called instance(real) of a Class.
+
+Relation B/w Class and Objects.
+********************************
+class logical Entity and Object Physical Entity.
+in Cse (Programming Point of View) logical mean no memory Allocation
+and Physical Means memory Allocation.
+
+Story About Class AND Object 
+****************************
+A Class is a template or Blueprint or mould of a Object.
+Story About Class and Object Related Terms
+*******************************************
+
+setter : these are methods used to assign the value to instance varible
+getter : these are methods used to get the value assigned to instance varaible.
+
+wap in php to show setter and getter
+************************************
+1. Every setter or getter is a normal method.
+2. But every normal method cannot be setter or getter.
+
+Magic Constants : These are global sepecial predefined mangled constants
+****************
+They start __ and end with __
+Two Undescore as prefix and Two Underscore as suffix
+
+1. __LINE__ : return current execution line.
+2. __CLASS__ : return current class name.
+3. __FUNCTION__ : return current function name.
+4. __METHOD__ : return current method name.
+5. __DIR__ : return current folder path of the file where it is place.
+6. __FILE__ : return complete path of the file.
+7. __NAMESPACE__* : return the current namespace.
+8. __HALT__*: return compiler exit.
+
+What is a Constructor
+*********************
+PHP 5.6 Standard a constructor is method which is automatically
+called at soon as Object is created.
+PHP 7+ Standard php has made __construct() as a Special Magic method as constructor.
+Note that, it is not allowed recommended to use same name as of 
+class name in php higher vesion.
+
+Types of constructor
+
+1. implicit constructor : automatically added by the 
+compiler or interpreter to the class for constructing a new memory
+block. or hidden Constructor or Blank Constructor.
+
+2. explicit constructor : this is user-defined constructor added
+	by the user to perform some logic in class or object.
+
+What are desctructor:-
+	These are methods which destroys the memory allocated in the 
+	Heap memory.
+	This is automatically called as soon the execution of the program
+	has been finished.
+	
+Types of explicit constructor
+1. Parameteried constructor : Arguments can be Passed during Objects created, in this case Parenthesis are mendatory.
+
+2. Non Parameteried  or default Constructor: 
+	No Arguments are be Passed during Objects created, in this case Parenthesis are optional.
+	
+Important Points Related to Constructor:-
+*****************************************
+1. it is called at Instantiation of the Class ie as soon as Object is created.
+2. In case of PHP,Constructor are like methods, with no return types.
+	Q: method and constructor 
+	   1: method can return anything : getter
+	   2. constructor method cannot return anything.
+3. Constructor acts as a setter which can be used to instialise the data memeber. and assign null to the unused variable.
+
+$x=20;
+echo $x; //undefined varaible
+NULL
+
+constructor uses garbage collector mechanism for un-used variables.
+Context in OOPs:-
+***************
+meaning of context in OOps is scope of Members and Memeber Functions with 
+to memory, either stack or either Heap.
+
+what is static?
+static in php is concept.
+
+1. static scope in varaibles.
+2. static context in oops.
+
+Note :: static is defined in-terms of logical entity not physical.
+As soon as we define, a class and object. we have two context in that class.
+
+1. Class Context(scope)  :: class Test
+2. Object Context(scope) :: $text = new Test()
+once you are able to analyse the context, it is easy to play with 
+data memeber and member function on the basis of context.
+
+STATIC Context is more to class Than Object.  --->  use classname
+
+**********
+How to use 
+**********
+
+classname::$<property>
+classname::<function-name()>
+
+Non-Context is more to object than Class. 
+
+	--> use Object name Outside class.
+	--> use $this Inside the class.
+	
+How to use
+**********
+$this->property
+$this->function-name()
+
+Case study:-
+
+<?php
+
+//wap in php to show static context
+
+class Test{
+public $a=300; #non-static context
+public static $b=400; #static context
+
+public function get_a(){ #non-static method.
+
+echo  "The value from Non static context = {$this->a} \n";
+echo  "The value from Non context = ";
+//echo Test::$a; #error due to accessing non-static a from static context
+echo PHP_EOL;
+
+}
+
+public static function get_b(){ #static method
+//echo  "The value from Non static context {$this->a} \n";
+echo PHP_EOL;
+echo  "The value from static context = ";
+echo Test::$b;
+//echo $this->b; #error due to $this Object Context for static context b
+}
+}
+
+$test = new Test();
+$test->get_a(); 
+//Test::get_a(); #error get_a scope non static it cannot be called by class context
+$test->get_b();
+Test::get_b();
+
+
+Inheritance :- 
+Deriving the properties(memeber) and features(methods) from
+parent to child class is called as inheritance.
+
+Inheritance May defined as the mechanism of re-usability.
+Using the Ready-made Items (Data member + Member Function) from existing
+class is a concept of Re-usability in Inheritance.
+
+------------------------------------
+Basic Terms Related to, Inheritance.
+------------------------------------
+
+1. Multi-level class : 
+2. Indedependent Class : if one class do-not depend on any other class then it is called Independent class.
+
+3. Dependent class (Relationship): if any class utilises the, features of any existing ready-made class then this is called as cdependent class and It set-ups a relationship B/w Both of Them.
+
+ There are Two Types of Relationships:-
+	1. Has Relationship 
+		1. parent class.
+		2. child class.
+	2. Is Relationship :
+	
+
+	
+Question : How will you sort a Array
+Ans : Using Pre-defined Function
+1. sort() : sorting on values : aesceding order
+2. rsort : sorting on values in reverse order : descending Order.
+
+2. asort : associative sorting on values
+3. ksort : sort the keys in Ascending Order
+
+4. arsort : reverse sorting on aesceding order.
+5. krsort : reverse sorting on keys of Associative Array.
+
+Ans : Using user-defined Function
+	
+1. Has Relationship : It is logical Relationship B/w  one or more class.
+					  This is by-default Relationship and called as Inheritance.
+					  
+					  In order to achieve Inheritance we need extends Keyword.
+					  
+					  <Child-class> will  all Properties [extends] from <Parent>
+					  
+		In order to Achieve Inheritance we require, at-least Two multi-level class.
+		1. parent class : This is Indedependent Class.
+		2. child class : This is Dependent Class Over Parent Class
+		Syntax:-
+			Class Child extends Parent{
+			
+			}
+			
+		Note ::
+		Parent Class /Master Class/Base Class/Super Class/Derived Class/Baap Class/Inherited Class
+		
+		Child Class/sub-class/inheriting Class/Deriving Class/Beta Class
+		
+2. Is Relationship :
+	It is Physical Relationship B/w  one or more class.
+	This is explicit Relationship and called as composition/Aggregation
+	
+	In order to achieve Is-Relationship we need to explicitly make Object of Any Class which want to use, inside own Class.		  
+	
+	Inside Own Case:-
+	Class A{
+	
+	public function B(){
+	
+		$b = new classB();
+		$b->someMethod();
+		
+	}	
+	
+	}
+
+Types of Inheritance:-
+*********************
+1. Single Inheritance 
+2. multi-level Inheritance
+3. Heiriechal Inheritance
+4. multiple Inheritance
+5. Hybrid Inheritance
+6. Cyclic Inheritance
+
+One of the Best Use case of Inheritance is Applied On File Inclusion
+and In Laravel This Concept is called Template Inheritance.
+
+What is File-inclusion :-
+Extending the source code from one file another is called as file-inclusion.
+
+1. include :
+2. include_once :
+3. require :
+4. require_once :
+
+
+Types of error in php
+********************
+Note :: We have 16 Types of Error Level
+Dont get Confuse B/w Error Level and Legal Error.
+Legal Error, we disturb the execution of the Program.
+where as Error level will raised only after program is successfully Running.
+
+1. Parse Error : if these Error Occur, Program execution will not take place.
+2. Syntax Error : if these Error Occur, Program execution will not take place.
+But in case of Error Level for eg: undefined index Error is Notice_Error
+will generates Error, But donot the execution of the Program.
+
+Eg-2 : Deprecation Error: Due To PHP Standards there may be a chance, 
+that you are using the Latest Version of php but you are using some features which are of old legacy version in that scenerio, You will get Depraction Error instead of Terminating the Program.
+
+1. Syntax Error (parse Error,Compilation Error) : 
+	if Occured No single line will not execute.
+2. Notice or Warning Error
+	if Occured then Notice error or Warning Error is raised
+    But, it will not affect the code Just Below the, Error line
+	ie it do-not stop the, execution of the Program.
+3. Fatal Error
+	if Occured then No Line Below the code will execute Ever.
+	until Resolved.
+4. PHP Standard Error OR Exeception
+	This type of Error, Occur due to logical Mistakes, which need to
+	be either resolved or Handled using Exeception Handling, Sometimes
+	These Error can be critical Like Fatal Error, Uncaught Error
+	
+Difference B/w All of These:-
+
+1. include : Includes the files successfully and multiple-times 
+			 if found successfully if not found generates notice Error or warning Error.
+			 
+2. include_once : includes the files successfully and once only even 
+				  if we add these lines multiple times.
+				  if found successfully if not found generates notice Error or warning Error,
+				  
+3. require : means file is highly required, without this file execution of the code not be generated hence if file is found it is loaded successfully otherwise it gennerated fatal Error. and we can include
+the same file multiple times.
+
+4. require_once : In require same file cannot be included multiple 
+times. and if not found it will generate the Error.
+
+Type :  include 		|include_once		|require 		|require_once	
+file     
+loading  multiple times.   only once.          multiple times.  Only once. 
+Error    warning Error     warning Error       Fatal Error     Fatal Error
+Memory   more               less                more           less
+
+Access Modifiers:-
+*****************
+Access Modifiers are verbs when added Before any Instance Variable
+or method, makes it hidden from the different scopes.
+
+Possible Number of scopes
+***************************
+
+1. From Outside the class 
+2. From Inside the Class
+3. From Child Class
+
+Difference B/w Public,private,protected
+
+location : 			public  | 	protected 		|private
+********************************************************* 
+outside class : 	valid   |    ---            | ---
+inside class  :		valid   |   valid           | valid
+child class   :     valid   |   valid           | ---
+
+
+Method Chaining in PHP
+**********************
+chaining one method with different method without destroying the instance
+is called as method chaining.
+it is widely used by laravel,codeIgnitor and MVC Framework.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	   
+ 
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+

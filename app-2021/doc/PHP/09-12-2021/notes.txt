@@ -1,0 +1,354 @@
+Getting started with Laragon:-
+1. while opening laragon screen you will called as
+laragon Control Panel
+
+1. menu : All the Important settings,logs,errors,initialisation,configurations related
+to, apache,mysql,php will be listed here.
+
+Important files:
+1. .ini : initialisation file 
+	it will contain all the important services, assets,
+	resources,permission, utilities required by any
+	program during startup.
+	
+	Eg:
+	php.ini
+	laragon.ini
+	mysql.ini
+	etc etc..
+	
+	
+2. .log : log file : It will contain all the Run time
+Error and exception occurred during execution of the Program
+	It store the information with alerts status
+	1. success
+	2. info
+	3. warning
+	4. danger (critical)
+	
+Question:-
+In Live Server displayerror are disabled Being a developer how will you find the, errors for developement Environment.
+Ans:-
+error.log
+Note ::
+what is scenerio in Server Environment
+www.facebook.com (master) : Live 10 Lakhs Traffic 
+test.facebook.com (testing) |push
+dev.facebook.com (dev-1)    |push
+
+3. .cnf or .conf : configurations file , it contains the configuration which are required during execution of the program at runtime execution.
+
+2. www : This menu will open and show all the projects you 	will
+create any c:/laragon/www
+					|p1.php
+					|array
+					|online examinition
+					|myproject
+					|
+					|...
+
+	1. server document Root:- It contain the System path
+		C:/laragon/www
+		
+	What is Document Root of Wamp?
+		c:/wamp/www
+	What is Document Root of Xammp?
+		c:/xampp/htdocs
+		
+	2. Explore Menu: it is used to, Open the Existing Project
+		in Explorer Window.
+	3. share :- Used to share the Resource with your team
+	mates connected to network.
+	
+	4. Project Launcher [^] : It will launch every projet
+	in url.
+	
+3. Quick App:-
+	In PHP Every project is a , App
+	These App can be Classified [Community-name] App
+	for example:
+	1. wordpress community
+	wordpress App
+	2. laravel Community
+	laravel App
+	3. Drupal Community
+	Drupal App
+	3. CodeIgnitor CodeIgnitor
+	CodeIgnitor App or CI App
+	...
+	...
+	etc..
+	
+	Using Quick App we can Automatically, Configure and Install Application.
+	Make sure you have, Internet Connected.
+	
+
+https://github.com/awnishmmg/Zwavexampp-list-plugin/blob/master/Xampp-Directory-Listing.zip?raw=true
+
+What is index.php file?
+Ans: index.php is the by default, file of apache which we will be directly
+loaded in the url
+
+Which server you are using?
+Apache Server 
+Apache server is INSTALLED in which server?
+largon Server
+
+what is my current file name?
+p1.php
+Where this is stored?
+inside c:/laragon/www inside laragon server
+From where you want to access p1.php
+
+
+where index.php is stored?
+inside c:/laragon/www
+					|index.php
+					
+from where you can access this index.php
+from Browser (cleint)
+make the Request
+url (uniform resource locator)
+uri (uniform resource Identifier)
+
+Url has following parts:-
+**************************
+url is a kind of web-address to some resource located at any server.
+url can be two types
+1. Protocol Based : uses Ip Address
+2. Non Protocal Based: uses Ip Address 
+	http://192.168.0.1
+	
+
+http://localhost:786/
+http://[::1]:786/
+http://127.0.0.1:786/
+http://localhost:786/p1.php web-driver valid
+http://localhost:786/p1.html web-driver
+file:///C:/laragon/www/p1.php system-driver In-valid
+file:///C:/laragon/www/p1.html valid
+
+http [protocol]
+file [protocol]
+/
+//
+///
+:
+resource
+uri-segment
+
+Url Syntax:-
+[protocol-name]://<sub-domains>/<domain>/<host>:<port>/<resource-url>
+http://
+
+ftp://
+ssl://
+smtp:// ----> mailServer
+http://
+https://
+ssh:// ----> gitbash
+	Web-driver(protocols)
+	
+whatapp://
+zoom://
+
+file:/// ---> system Driver
+file:// ----> web-driver
+
+Note ::
+Layers
+Server
+   ^
+   |
+   |
+   |
+   |
+---------
+1. Application
+2. Presentation
+3. session
+4. Tranport
+5. network
+6. data link layer
+7. physical Layers
+
+--------------
+  |
+  |
+  |
+Cleint
+
+Cleint <-------------Request -----------------> Server
+		<------------Response ---------------->		
+
+   |<------------Medium (Internet)--------------->|
+|layer-1 |layer-2 |layer-3| layer-4 |layer-5 |layer-6 |layer-7
+	
+		
+cleint
+[Station]------------> Kanpur	(Amausi) ---> Banda unsecure
+		|------------> Fatehpur (pgi)  -----> Banda secure
+
+http://	|------------>		443		facebook (server) secure
+http:// |------------>      80		facebook (server) unsecure
+
+
+http://facebook.com:80/
+https://www.facebook.com:443/
+
+Url Syntax:-
+[protocol-name]://<sub-domains>/<domain>/<host>:<port>/<resource-url>
+http://test.seeksolution.in/web-app/login
+http://test.seeksolution.in:80/web-app/login
+https://test.seeksolution.in:443/web-app/login
+	
+https:// protocol
+test  sub-domain
+seeksolution domain name
+.in host
+:<443> port
+web-address/login ---> Resource
+End-point
+
+
+https://test.seeksolution.in:443/web-app/login
+       |                        |       |
+
+uri-segment:each part seperated by / single slash, is called as uri-segment
+After port : it is basically path to resource
+after protocal and before endpoints (test.seeksolution.in:443) is called
+as domain name
+Every domain may have a sub-domain or not but will have a port.
+and every domain will have a Ip Address, since one cannot learn or remeber
+ip address so, we provide a alias name this alias name is called as
+domain name and this domain name has to be registred (mapped) with
+the Ip and using dns(domain name server)
+
+Question:-
+1. http://dev.localhost/myproject/admin/p1.php
+http://dev.localhost:80/myproject/admin/p1.php
+
+protocal:http:// or http
+domain name : dev.localhost
+domain host : 
+sub-domain : dev
+port : 80
+uri-segment : 4
+	dev.localhost:80/
+	myproject/
+	admin/
+	p1.php
+resource-Address: myproject/admin/p1.php
+End point : myproject/admin/p1.php
+resource : p1.php
+resoure_path : myproject/admin/p1.php
+extension:.php
+mime type : .php
+ip Address: 127.0.0.1
+loopback Ip Address:  127.0.0.1
+local Address :127.0.0.1 or DESKTOP-12WE4R5T
+foriegn Address : [::1]
+
+What is mime type:-
+multipurpose internet mail extensions.
+
+How Browser Handles a file loaded in the Browser?
+1. Browser checks for the mime type supported by browser meta catalog
+(Dictionary)
+2. if it exists, then it will be loaded in memory.
+   else , it will be thrown as a download (this is reason why browser 
+   doesnot) give any memory allocation to the non-supported file. and will be sent to downloads.
+	
+    This happens because, the browser can support two types of 
+	file
+   a) Renderable (presentable)
+   b) Non Rendarable 
+   
+   index.html ---> renderable
+   p1.txt ---> non-renderable
+   style.css ---> non-renderable
+   script.js ---> non-renderable
+   p1.png ---> renderable
+   index.exe --------------------> Downloaded (mime type non supported).
+   p1.jpg ---> renderable
+   p1.doc  --------------------> Downloaded (mime type non supported).
+   p1.docx --------------------> Downloaded (mime type non supported).
+   p1.xls --------------------> Downloaded (mime type non supported).
+   p1.php ---> non-renderable
+   
+   1. mime type supported ---> Memory load
+		1. renderable : the file which follows SGML Standard or WHATWG Standards.
+		
+		SGML ---> html4
+		WHATWG ---> html5
+		
+		file:///C:/Users/Abhay%20Singh/Desktop/test/index.html
+		protocal : file
+		system : local
+		
+		2. non renderable : the file which donot follow SGML or WHATWG 
+		standard will be loaded as plain text (as raw file)
+		In that case we need to Add Handlers to Handle such type of file.
+		
+		file:///C:/Users/Abhay%20Singh/Desktop/test/index.php
+		
+		protocal : file
+		system : local
+		
+		How to Run Any php file in the Browser
+		---------------------------------------
+		1. Add Handler php8  ----> Software ---> PHP Interpreter -->
+		Activate ----> php plain tex ---> Input Parse or Compile or decode
+		----> Outside --->View Port
+		
+		since php is a server side langauge we need a server
+		start ---> Apache httpd.exe
+		http:// ---> port ---> 786
+		
+		file:///C:/laragon/www/App-2021/test.php
+		[http://][c:/laragon/www]app-2021/test.php
+		http://{SERVER_ROOT}:786]/app-2021/test.php
+		OR
+		http://{DOCUMENT_ROOT}:786]/app-2021/test.php
+		
+		c:/laragon/www -----> localhost ----> 127.0.0.1
+		
+		http://c/laragon/www/App-2021/test.php
+		
+		http://C:/laragon/www/App-2021/test.php
+		http://:786/C:/laragon/www/App-2021/test.php
+		
+		c:/windows/system32/driver/etc/hosts
+		
+		127.0.0.1 -----> localhost
+		
+		http://localhost:786/app-2021/test.php
+		http://127.0.0.1:786/app-2021/test.php
+		http://[::1]:786/app-2021/test.php
+		
+	
+   2. mime type supported ----> Donwloaded not loaded into memory
+   
+   
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

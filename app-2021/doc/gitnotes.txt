@@ -1,0 +1,342 @@
+What is License:-
+This file contains the, declaration,code of conduct, of legal License
+like MIT,GPL,....
+License are require when your repo is public.
+
+Important To be Notes while creating Repo?
+1. Adding Readme File : It Contains Documentation about repo.
+2. Adding .gitignore : To ignore which file not to push(upload) to the server.
+
+
+For Example:-
+index.html
+contact.html
+gallery.html
+
+.gitignore 
+index.html 
+when you will push the code, All file will move to github but,
+index.html will not be uploaded.
+
+3. license: Add the License which you own, if your repo is public.
+	if it has, license and you are not adding it.
+	in that case you cannot claim Copyright.
+4.  Head, Branch(master,main) to the server.
+
+Note :: Branches can divided on the basis 
+1. Environments.
+2. Developer Role.
+
+first Command 
+git clone : First Time you download any repo cloning
+git pull : And Second Time it is used pull
+
+What is difference B/w git clone and git pull
+**********************************************
+1. git clone is first command for downloading any project
+   git pull is used to download the code with latest changes
+	from any specfic branch
+
+2. In case of git clone all the project with all the branches
+will be downloaded.
+	git pull is used to download the code from any specific
+	branch.
+
+How to clone:-
+git clone <https:url>
+
+git flow:-
+*********
+git flow tells how, your project flows from local to server.
+it defines the life story or life cycle of repo from local to 
+server.
+
+Since git is a distributed VCM
+There are 4 stages(flow channel) of git
+1. local system
+2. stage
+3. .git repo
+4. Cloud System (github,bitbucket,gitlab)
+
+
+https://github.com/awnishmmg/Repo.git
+C:\Users\Abhay Singh\Downloads\Repo-master.zip
+
+How to find Head?
+1. using git log
+2. using tree /f
+3. Manual 
+4. using Branch
+
+git log: command it is used to find all the imformation
+about the repo.
+git log will tell information like, version_id,
+commit_id,author-name,current Branch, Head Information
+author-email..etc
+
+$ cd repo (master)
+$ git log
+git log is same as git show
+
+$ git show -help : command help
+$ git show --help : Browser Documentation
+
+Difference B/w git show and git log
+1. git show is show the information about intial commit 
+and readme file information
+2. git log : gives you the information of the commits
+if commits are more you can move to different page
+by using pagename
+$git log
+....
+...
+....
+...
+:<page-no>
+to Quit git log use q
+
+1. Workspace : Folder where your all files and .git are placed
+2. Repo : The folder .git 
+
+How to find the Path of Head:-
+.git/head  open with noetpad
+or
+
+$ cd .git/
+$ cat head
+
+
+How to create a Branch :-
+$ git branch <branch-name>
+
+How to show list of Branches:-
+$ git branch
+
+Note :: * <branch-name> means current working branch.
+This will be head
+
+for example:-
+* master ---> Head ---> Current Branch (master)
+ dev-1
+ dev-2
+ dev-3
+ 
+How to change or switch the Branch
+$ git checkout <branch-name>
+
+for example:-
+git checkout dev-1
+switching to branch 'dev-1'
+ 
+$ ---> (dev-1)
+
+Now you can check Head:-
+$ cd .git/
+$ cat head
+ref : refs/head/dev-1
+
+What is Branch referencing:-
+whenever we create a new branch the new created branch requires a reference. for example dev-1 require master branch since, dev-1 branch uses, reference of master.
+the version_id of master and dev-1 will remain
+same until a first commit.
+
+This concept is called Branch Reference.
+Q1: master 
+		|----> dev-1
+				 |----> dev-2
+Write Down All the Commands:-
+$ git branch dev-1
+$ git checkout dev-1
+$ git branch dev-2
+$ git checkout dev-2
+
+Q2:-
+$ git branch
+* master 
+$ git branch dev-1
+$ git branch dev-2
+$ git branch dev-3
+
+What will be tree
+ref : refs/head/master <v1>
+dev-1 <v1>
+dev-2 <v1>
+dev-3 <v1>
+
+master 
+	dev-1
+	dev-2
+	dev-3
+	
+How to create new Branch and Automatically Switch:-
+$ git checkout -b <new-branch-name>
+for example :-
+$ git branch
+  dev-1
+* dev-2
+  master
+
+$ git checkout -b dev-3
+Switched to a new branch 'dev-3'
+$ git branch
+  dev-1
+  dev-2
+* dev-3
+  master
+  
+Why do we create branches:-
+1. whenever you have multiple developers or you have multiple environments (developement,testing,production,staging) in that case 
+keep the code, seperate for each developer we create a
+branch.
+
+why ? so that if anything wrong happens, we can reclone
+the code from parent branch.
+
+What is Convention:-
+1. master ----> live server (Production)
+2. testing ---> (Testing)
+3. staging ---> (Testing + Developement + Cleint + Quality Analyst)
+4. dev ---> developement
+
+We know we follow, Agile ---> Scrum ---> sprints
+sprints ---> developer
+sprints ---> Tester
+
+developer : ---> Register.html
+					|
+					same code 
+						|
+						Tester
+$ git branch developer
+$ git checkout developer Register.html
+$ git checkout -b tester Register.html
+
+Git Tracking:-
+****************
+git tracking is related to stage phase.
+it tracks each file and tells the status of file  by using
+3 status
+************
+1. untracked : git will show, all the new files as untracked.
+		
+2. unmodified : Now file is added in stage , and it is ready to tracked but file is not modified.(no code or editing has been done,or changes have done)
+
+3. modified : file is under stage, some changes has been done on the file.
+
+4. deleted(optional) : file is under stage, and user has deleted the file.
+
+How to check tracking ?
+$ git status
+
+How to Add Files to stages for commit:-
+$ git add <filename1> <filename2> <filename3> <filename4>
+$ git add -A
+or
+$ git add --all
+or
+$ git add .
+
+How to commit changes to .git repo
+**********************************
+$ git commit -m "Message Name"
+
+How to restore the deleted file 
+******************************
+$ git restore <file-name>
+
+How to push the code the github
+*****************************
+1. Add url to remote server
+$ git remote add origin <url>
+$ git remote add origin https://github.com/awnishmmg/Repo
+
+Check the status of, remote
+1. fetch
+2. pull/Push
+
+$ git remote -v
+
+How to push
+************
+$ git push origin <branch-name>
+$ git push origin master
+
+Configuration of git Environment.
+*********************************
+git is installed globally in your System.
+so, In Order to Track and create version Id
+there must a author.(developer or author of source code)
+so, we need to create the Ownership for the system on the git.
+
+$ git config --global 
+1. user.email
+2. user.name
+
+
+to get username :- 
+$ git config --global user.name
+
+to get Email :- 
+$ git config --global user.email
+
+
+to set username :- 
+$ git config --global user.name "Awnish Kr"
+
+to set Email :- 
+$ git config --global user.email "awnishmmg.a41@gmail.com"
+
+How to Initialise a Repo
+$ git init 
+This command is used to create .git folder which means
+intialise this folder with a repo file. and Name of 
+that repo folder or file is a .git and it is a hidden Folder
+with a By default Branch Name : master
+
+What is Branch name of .git 
+(GIT_DIR!)
+
+create a Readme File 
+*************************
+$ touch README.md
+$ echo "# This is My Repo2"
+$# This is My Repo2
+
+$ echo "# This is My Repo2" >> README.md
+ 
+What is meaning of initial Commit?
+The First Commit peformed on the Repo, from staging
+is called Initial Commit
+
+$ git add .
+$ git commit -m "Initial Commit"
+
+
+
+
+
+
+
+
+
+
+
+
+				
+
+
+
+
+
+ 
+
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 

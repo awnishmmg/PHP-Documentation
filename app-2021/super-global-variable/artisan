@@ -1,0 +1,45 @@
+<?php
+echo 'This is Awnish Terminal';
+echo PHP_EOL;
+echo 'The Awnish Framework : Version 1.x';
+echo PHP_EOL;
+$commands=[
+'--help' => 'This is Help Command',
+'--v' => '1.x',
+'--a'=>'for Addition',
+'--s'=>'for subtraction',
+'--m'=>'for multiplication',
+'--d'=>'for division',
+'--r'=>'for remainder',
+];
+echo PHP_EOL;
+foreach($commands as $key => $value){
+	printf("%s\t:\t%s\n",$key,$value);
+}
+$output='';
+if(isset($argv[1])){
+	$command=$argv[1];
+	echo "\e[H\e[J";
+	switch($command){
+		case '--v':
+      			$output='1.x';
+      		break;
+		case '--a':
+      		$x = readline('Enter a Number 1:');
+			$y = readline('Enter a Number 2:');
+			$output = $x+$y;
+      		break;
+
+		default:
+			$output='Invalid Command Supplied';
+		break;
+	}
+}
+
+echo $output;
+
+
+
+
+
+

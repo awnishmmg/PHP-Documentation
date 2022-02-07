@@ -1,0 +1,111 @@
+Getting started with Laragon:-
+1. while opening laragon screen you will called as
+laragon Control Panel
+
+1. menu : All the Important settings,logs,errors,initialisation,configurations related
+to, apache,mysql,php will be listed here.
+
+Important files:
+1. .ini : initialisation file 
+	it will contain all the important services, assets,
+	resources,permission, utilities required by any
+	program during startup.
+	
+	Eg:
+	php.ini
+	laragon.ini
+	mysql.ini
+	etc etc..
+	
+	
+2. .log : log file : It will contain all the Run time
+Error and exception occurred during execution of the Program
+	It store the information with alerts status
+	1. success
+	2. info
+	3. warning
+	4. danger (critical)
+	
+Question:-
+In Live Server displayerror are disabled Being a developer how will you find the, errors for developement Environment.
+Ans:-
+error.log
+Note ::
+what is scenerio in Server Environment
+www.facebook.com (master) : Live 10 Lakhs Traffic 
+test.facebook.com (testing) |push
+dev.facebook.com (dev-1)    |push
+
+3. .cnf or .conf : configurations file , it contains the configuration which are required during execution of the program at runtime execution.
+
+2. www : This menu will open and show all the projects you 	will
+create any c:/laragon/www
+					|p1.php
+					|array
+					|online examinition
+					|myproject
+					|
+					|...
+
+	1. server document Root:- It contain the System path
+		C:/laragon/www
+		
+	What is Document Root of Wamp?
+		c:/wamp/www
+	What is Document Root of Xammp?
+		c:/xampp/htdocs
+		
+	2. Explore Menu: it is used to, Open the Existing Project
+		in Explorer Window.
+	3. share :- Used to share the Resource with your team
+	mates connected to network.
+	
+	4. Project Launcher [^] : It will launch every projet
+	in url.
+	
+3. Quick App:-
+	In PHP Every project is a , App
+	These App can be Classified [Community-name] App
+	for example:
+	1. wordpress community
+	wordpress App
+	2. laravel Community
+	laravel App
+	3. Drupal Community
+	Drupal App
+	3. CodeIgnitor CodeIgnitor
+	CodeIgnitor App or CI App
+	...
+	...
+	etc..
+	
+	Using Quick App we can Automatically, Configure and Install Application.
+	Make sure you have, Internet Connected.
+	
+
+https://github.com/awnishmmg/Zwavexampp-list-plugin/blob/master/Xampp-Directory-Listing.zip?raw=true
+	
+	
+	
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,158 @@
+Introduction to Jira:-
+1. jira is a project management Tool 
+2. Jira uses scrum methodology or Agile Methodology
+3. it uses Scrum and Scrum Template for Project Management.
+4. Jira is Multilingual Plateform    (English,French,Chinese,Russian,German,spanish...)
+5. Jira is Plateform Independent.* (Because it is cloud based)
+6. Jira has two version
+	1. Free Version : 14-days Trial
+	2. Enterprise Version : You need to pay some amount to     Atlassian
+	
+7. It is Product of Australian Company Atlassian.
+8. 98% Companies use JIRA (except Lucknow Companies)
+
+Getting started with Jira:-
+***************************
+1. Navigation Bar : Header
+2. menu bar dashboard dependent: 
+3. working space : is actual working area where entire project,
+	sprints, Issues, Story, tasks, todo list, everything Appear.
+	
+	
+vcm or scm in jira:-
+**********************
+version control management system or source code management system in order to manage of source code we have 4 types of cloud server.
+1. github (Microsoft)
+2. gitlab
+3. bitbucket (has link with Jira Atlassian)
+4. bitkeeper (Linux)
+
+jira.com
+id.atlassian.com
+jira Cloud is,Dynamic in terms everything of Ui/Layouts
+
+  
+Types of Jira Products:-
+**********************
+There are 4 Types of Jira Product
+1. jira Core (Confluence)
+2. jira Software (Jira Software Management)
+3. Jira Service Desk (Jira Crm,Jira Support,Atlassian Support,)
+4. Jira Ops (Devops ---> opsgenisis)
+
+Types of Methodology in Jira:-
+******************************
+1. Agile or Scrum
+2. Kanban
+3. custom Methodology
+4. Agile+Kanban+Custom (Mixed Methodology)
+	or 
+   scrum+Kanban+Custom (Mixed Methodology)
+   
+Software Methodology : Agile,Scrum
+PMS : Jira,confluence,Jira Software management
+
+1. jira Core (Confluence) : it provides Issue Management or bug tracking
+	of the project. it helps to see the overall workflow of the Issue or Project, it helps you to track the entire (bug,workflow,issue), from starting to end.
+	
+2. jira Software (Jira Software Management) = Combination of Confluence +
+   Agile Methodology.
+   
+3. Jira Service Desk (Jira Crm,Jira Support,Atlassian Support,)
+	it provides you tools, which helps your agent to track,maintaince,
+	crm (customer relationship management) to end user.
+	so that  there problem or graviances can be easily resolved.
+	
+4. Jira Ops (Devops ---> opsgenisis)
+   is used by server Admins of a Enterprise he uses Devopes Tools to manage
+   server or cloud.
+   
+Flow of Jira Dashboard:
+1. Login Page (id.atlassian.com)
+2. product page (start.Atlassian.com) or Jira Landing Page
+3. Projects Page
+
+
+Difference B/w Kanban and Scrum:-
+***********************************
+Kanban is a combination of tabular and Grid system in a single view, 
+displayed as Running or Scheduled Process.
+
+Ex : 
+list view in Salesforce is example of Kanban
+Google weather App Kanban View
+Google Calender App Kanban View
+
+In Jira Kanban is a Methodology,or Template. (Software Developement Template).
+
+Fact:: Jira word is derived from Japanese word "Gojira" means GodZilla.
+
+Basic Terms Related to Scrum:-
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1. WBS: work break down structure : we break a very large complex project
+into modules > scrum > sprints (bit sized)
+2. iterations : smallest Chunk delivered to the client
+3. Incremental Delivery : Any chunks which under developement cycle
+	must under-go repetative testing,Issue resolving, and bug tracking
+	also we try to Add few extra Features of another chunk so that,
+	a larger chunk can be produced (Combination of Bugs resolved in recent sprint, and New Features added from New sprint or chunk).
+	
+	n cycle of chunks in forward direction will generate a Final Product.
+	
+4. velocity(Team): The Overall Performance of each developer
+	in your team must collabrate effeciently so that velocity
+	curve (graph) is exponential.
+	
+5. Volume:- Agile Methodology is capable of resolving Any volume
+   of Software product.
+   
+6. Agile Metrices: is a set of paramter that decides the Quality,
+time,cost of the product.
+
+7. Road Map : Overall Process that, your scrum will under go.
+8. Backlogs : pending task for developer in each sprint is called
+Backlogs.
+9. workflow : Bug tracking from starting to end is called workflow.
+10. workspace : it is dashboard or UI where you work within
+the project.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

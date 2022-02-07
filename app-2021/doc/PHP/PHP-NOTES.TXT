@@ -1,0 +1,2288 @@
+Getting started with PHP
+************************
+1. Goto Your document Root
+	c:/laragon/www
+	
+launch cmd
+1.	Create folder 
+	mkdir app-2021
+
+2. goto inside app-2021 folder
+	cd app-2021
+
+3. How to create php file
+	start notepad <file-name.php>
+	for eg:
+	start notepad p1.php
+	start notepad p2.php
+	start notepad p3.php
+	start notepad p4.php
+	
+4. How to run the program:-
+	php <filename.php>
+	
+	
+1.  there are two possible cases.
+	case 1: you will get a output
+	case 2: php not recognised as internal or external command
+	
+	
+	you have written the code of php -----> execute php interpreter
+	php interpreter ---->laragon
+	1. set the Environment variable set
+	2. use the laragon terminal
+	
+	
+How many ways we can run php programs:-
+1 using laragon terminal
+	launch laragon terminal
+	goto file 
+	type
+	php filename.php
+	
+	output : terminal ---> php cli mode
+	
+2. using cmd/git bash...
+	goto file
+	type 
+	php filename.php
+	
+	output : terminal ---> php cli mode
+	
+3. using php inbuilt server
+	cli server
+	goto file
+	type
+	
+	php -S localhost:<port-no>
+	
+	goto browser 
+	make a request 
+	localhost:<port-no>
+	type url: filename.php
+	url :
+	localhost:<port-no>/file-name.php
+	
+	Output ---> web ---> php cli web mode
+	Note : in case  you need not to enable laragon server
+	
+	in php version 5.6.2 php supports inbuilt server.
+	
+	How to close the Running server
+	ctrl + c
+	current executing command close.
+	
+4. laragon(server) web-Interface:-	
+   server : On
+   Php : Apache : On
+   Mysql : On
+   
+   make the request using browser, for http://localhost:<apache-port>
+   http://localhost:786
+   
+   or
+   Quick Open using cmd
+   window+R
+   type cmd hit enter.
+   start chrome.exe <url>
+   
+   
+How many ways you can execute the PHP Code
+1. php cli mode
+		1.laragon terminal
+		2.git-bash
+		3.cmd/powershell
+		
+		4. php interactive mode ---> php REPL ---> php>
+		How to launch php repl mode
+		cmd:>
+		type php -a
+		php> without using opening and closing of php tags
+		but ; is mendatory.
+		
+		Wap a program in php interactive
+		php > $x='ravi';
+		php > echo $x;
+		ravi
+		php > echo strtoupper('awnish');
+		AWNISH
+		php >    
+		
+		
+		Note:: 
+		php -a and php -S here, -a, and -S are called as command line
+		argument
+		
+		on supplying these arguments, the program starts executing 
+		in the same, given environment.
+		php -v : Version
+		
+		How to see list of all arguments
+		*********************************
+		cmd:> php -help
+		
+		php -a : interactive mode
+		php -r : execute the code as readline
+		php -v : display the current version of php
+		php --version : display the current version of php
+		php -S : Run the inbuilt cli server of php <@v php 5.6.2>
+		php -h : run the helps
+		php -m : loads all the important modules intialised by php.ini
+		
+		...
+		...
+			
+			
+		wap in php to run a php code as readline
+		******************************************
+		we will use php -r command to run the code in readline
+		
+		cmd:>php -r "echo 'Hy my name is Katreena';"
+		Hy my name is Katreena
+				
+2. php web mode
+
+		1. PHP CLI SERVER php -S <url>:<any-port-no>
+		2. using laragon web Interface.
+			
+We have only two types of program in a programming langauge
+1. with input : Addition of two number with Input.
+2. without input : Hello world
+
+How to create Our First Input Program in web-Interface
+*******************************************************
+
+Input Fields : Html Forms
+
+1. create a Html form 
+2. Add any no of Field You require.
+3. Add a submit Button
+4. Add form Tag, with action, and method="GET" or method="POST"
+5. add the server-side page url with is going to handle request at
+	Server-side.
+	
+6. fill the form and Hit on submit Button
+7. You will get, a Not Found 404 Error. becuase Resource does not exist.
+	
+8.	create a server-side page, which can handle, Cleint Request and   	
+    Process data and give the response.
+9.	use the SuperGlobal Varaible, of PHP to accept the request using
+	$_REQUEST to handle the form fields.
+	
+10. since, $_REQUEST is a, Array, it has a key as name field attribute,
+	in html form and use echo statement to display the output
+	and after words comment it.
+	
+11. Note that, add id and name attribute on html forms to handle each form
+	controls on server side.
+	Concept: This concept is valid for all langauge jsp, python, asp.net
+	and php also
+	id ----> for javascript or client side.
+	name ---> for server side
+	
+	
+Task:
+1. Wap in PHP to accept, name and display on Another Page
+2. Wap in PHP to take three numbers as Input and Display Result of Sum
+3. Wap in PHP to make calculator to find, +,-,*,/
+4.*** Wap in PHp to take info of user, name, email, password, mobile
+	and display his information in next page.
+5. Wap in PHP to make take p,r,t  find SI.
+6. Wap in PHP to accept lenght, breadth from user and calculate
+	area of rectangle, perimeter
+	
+7 wap in php to take radius as input and find, area, circumference of
+	of a circle.
+8. wap in php to find remainder of a given two numbers when a/b using % Operator
+
+9.*** wap in php to find remainder of a given two numbers when a/b without using % Operator
+
+10.*** wap in php to take a and b as input and use -,/,* operators to find 
+sum but you are not allowed to use + Operator and condition 
+1. a>b always
+2. a>0 always +ve
+3. b>0 always +ve
+
+11.*** Wap in PHP Take input of 5 Subjects of student, Enter his marks
+and show the Marks of Each Subject with Overall %
+
+Client side : Front End Langauge,(Html,css,css3,Less,SASS,Vanillajs(javascript),JQuery,Bootstrap,Tailwind css,SVG, Images,fonts,icons,themes,widgets,layouts,Other Framework of 
+Js (ReactJs,Angular,Angular-Js,BackBoneJs,EmberJs,nextJs,Redux,...,vuejs))
+Server side : Backend Langauge including Database 		(C++,go,Rust,C,Php,Python,Ruby,R,Node.js,ExpressJs,Java(JSP,servelet),asp.net,Scala,perl,...)
+			Database :-
+			SQL Based Database (Structered Database)
+			1. Oracle 
+			2. Mysql
+			3. SQLite
+			4. MariaDb
+			5. MS SQL
+			
+			Unstructured Database : NO-SQL Database
+			1. mongoDb
+			2. Dynamo Db
+			3. CouchDb
+			4. Candendra
+			5. Redis
+			6. Postgrelsql
+			7. Firebase
+			8. S3(simple storage service) Bucket(AWS)
+			
+			
+using Cleint Side Validation on PHP 
+***********************************
+what is validation and Types of Validation:-
+1. validating or restricting the user from entering the invalid data in the form field is called as validation.
+
+Most Confusing Question:-
+What is difference B/w validation,authentication,authorisation.
+
+1.validation : will prevent server from, providing invalid or uploading illegal files format in the database or server by the stupid user.
+
+for eg: Enter the name :7272727272 invalid  process validation
+		Upload Pic : Upload Bahubali.mp4 2Gb Only 20Kb file allowed,
+										invalid file ---> process ---> validation.
+										
+		Incase of validation there is no involvement of database.
+		validation : javascript : client side
+		validation : php : serverside
+		
+		1. Both side validation should be done, because there may be , chance 
+		that user may have blocked his javascript or disabled the javascript.
+		
+		Interview Question
+		******************
+		Q1: making a Email Id unique for each Regsitration is example ?
+		Ans: Authentication why?
+		because user email will checked from database.
+		
+		Note :: In case of validation either from client side or server side
+		only logic be involved not, database.
+		
+		But, checking the format of email is validation.
+		awnish@gmail.com ----> format Match ---> pattern ---> pattern matching
+		or regular expression.
+				
+2. authentication:
+		Cross Checking, the Identity of existing user from database is called
+		as Authentication.
+		Such Type of Feature is used in case of 
+		Login, Email Verification, Unique email, forget Password,
+		google login,fb login, github login, linked in login...
+		otp Verification, otp login.
+		
+		Question : captcha is which type of validation.
+		(c)ompletely (a)utomated (p)ublic (t)uring test to tell (c)omputers and (H)umans
+		(a)part.
+		it is always server side because it involves, session is storage
+		which is processed at server side only ---> session data that is 
+		already encrypted.
+		
+3. Authorization:-
+			refers to Permission, given to authenticated user.
+			once the user is valid then it may have few permission or may not 
+			have any permission. this concept is authorisation.
+			
+			for eg:
+				I can register in Panel ---> login In there (authenticated)
+				 -----> Loginned ---> I cannot see any course (authorised for
+				 any course)
+				 
+			For Eg: trial user, premieum 
+					|10 Feature   |20 feature
+					(Non Authorized)   (Authorized)
+					
+					
+		  Types of Authorization
+		  1. No Authorization (user---> Role)
+		  2. Fully Authorized  (super admin ---> Role)
+		  3. Partially Authorized (admin ----> Role)
+		  
+			Roles & Permission is kind of Authorization.
+			
+		eg:
+		School Erp:(Enterprise Resource Planning)
+		1. teacher
+				|Add Attendance
+				|View Attendance
+		2. student
+				|View Attendance
+				
+				here, student cannot add attendance, because student is not 
+				athorised for, adding attendance.
+				
+				
+Working with php cli:-
+*********************
+
+1. hello world : without input 
+2.  Addtion of Two Number: with input
+		  
+In Order to take input on console window or cli mode, we need a scanner.php
+file where we define input() function
+
+Postmortem of Input() function inside scanner.php
+*************************************************
+in order to understand this, how, input function works 
+following concepts are required
+
+1. use of echo statements
+2. driver protocol [protocol]://
+3. concept of user-defined function
+4. returning from a function
+5. using default argument in a function
+6. file-pointer and file handling 
+7. input output buffer or I/O Streams 
+8. using trim() function 
+
+Q1: Do php support inbuilt, console input function?
+Ans :yes, readline() is predefined function used to take input.
+
+wap in php to perform addition of two numbers using readline method in cli
+**************************************************************************
+C:\laragon\www\app-2021\cli>php -a
+Interactive shell
+
+php > $name = readline();
+awnish
+php > echo $name;
+awnish
+php > $name = readline('Enter the name:');
+Enter the name:awnish
+php > echo $name;
+awnish
+php >     
+php > exit
+php > ^C
+
+1. start notepad p3.php
+2. 
+
+$no1 = readline('Enter no 1:');
+$no2 = readline('Enter no 2:');
+$sum = $no1+$no2;
+printf("The sum is = %d ",$sum);
+
+Output:
+*******
+C:\laragon\www\app-2021\cli>php p3.php
+Enter no 1:10
+Enter no 2:20
+The sum is = 30
+
+Explaination of Above concepts
+*********************************
+
+1. use of echo statements:
+	we can echo statement for printing the string value, or any variable
+	value or any constant literal.
+	
+	php> echo 'Hello world';
+	Hello world
+	php> echo "Hello world";
+	Hello world
+	php> echo 10; //constant literal
+	10
+	php> $x=10;
+	php > echo $x;
+	10
+	
+	php> echo true; //constant literal
+	1
+	php> echo false; //constant literal
+	
+	php > echo false;
+	php > printf("%d",false);
+	0
+	
+	php> echo '';
+	''
+	
+	php > echo '';
+	php > echo json_encode('');
+	""
+	php > echo json_encode(false);
+	false
+	php > echo PHP_EOL;
+
+	php > echo json_encode(PHP_EOL);
+	"\r\n"
+	php >         
+	
+	Q1: $x=(false==''); 
+	a) 1 valid
+	b) 0
+	c) 
+	d)None of the above
+	
+	Explaination:
+	== compare content
+	
+	Q2: $x=(false===''); 
+	a) 1 valid
+	b) 0
+	c)  
+	d)None of the above
+	
+	Explaination:-
+	
+	php > $x=(false==='');
+	php > echo $x;
+	php >  $x=(false==='');
+	php > echo $x;
+	php > echo (int)$x;
+	0
+	php > echo json_encode($x)
+	php > echo json_encode($x);
+	false
+	php > echo getType($x);
+	boolean
+	php> echo [10,20,30];
+	Array to string Conversion Error.	
+	Note:: echo will evaluate, the,
+	expression as a string.	
+	lower conversion : int
+	upper conversion : string
+	php > echo [10,20,30];
+	Notice: Array to string conversion in php shell code on line 1
+	Array
+	php > echo 'Hy';
+	Hy
+	php > echo join([10,20,30]);
+	102030
+	php >      
+	php> echo null; //constant literal
+	php > echo "[10,20,30]";
+	[10,20,30]
+	php > echo implode('',[10,20,30]);
+	102030
+	
+php > echo null;
+php > echo json_encode(null);
+null
+php > 
+
+Q3:- null==false;
+php > echo (null==false);
+1
+php > echo (null===false);
+php >    
+
+Note :: null==0==false==''==true==1
+ === we can find the difference.
+	
+	
+2. driver protocol [protocol]://
+	php supports list of driver protocols
+	These are also called as wrapper, or schem in the php
+	1. file:// — Accessing local filesystem
+	2. http:// — Accessing HTTP(s) URLs
+	3. ftp:// — Accessing FTP(s) URLs
+	4. php:// — Accessing various I/O streams
+	5. zlib:// — Compression Streams
+	6. data:// — Data (RFC 2397)
+	7. glob:// — Find pathnames matching pattern
+	8. phar:// — PHP Archive
+	9. ssh2:// — Secure Shell 2
+	10. rar:// — RAR
+	11. ogg:// — Audio streams
+	12. expect:// — Process Interaction Streams
+	
+	php:// It can handle any type of input or output from any interface.
+	it can terminal, it can be, Ui Based, or any third party (API) Application Programming Interface.
+	
+	
+    in scanner.php we wrote a code
+	$input = fgets(STDIN,1024);
+	STDIN : stdinput
+	STDERR : stderror
+	STDOUT : stdoutput
+	
+	the meaning of STDIN = php://input
+	the meaning of stdout = php://output (5.6.2)or php://memory <(5.6.-)
+	
+	php://input 
+	php://input is a read-only stream that allows you to read raw data from the request body. php://input is not available with enctype="multipart/form-data".
+
+	php://output 
+	php://output is a write-only stream that allows you to write to the output buffer mechanism in the same way as print and echo.
+	
+	Note that, these are used for Raw Input only (Json Input) from client request.
+	
+	what is use of fgets
+	*********************
+	fgets() allows you read the data from any input resource.
+	it internally uses, file pointer.
+	by default it can read 1024 characters at a time from the input 
+	buffer.
+	
+	1. fgets  : terminal read 
+		fgets(STDIN,1024)
+		
+	2. fgets : file read
+	
+	fgets can read any no of character from any file, or resource
+	before EOL,
+	
+	case 1:-
+	fgets accepts two arguments
+	
+	1. resource handler this can be a
+	a wrapper, scheme, file pointer, 
+	2.  buffer_size : no of memory blocks reserved for, input characters
+	stream.
+	it works like a link list
+	where 0 : Address
+		  1 : Base Data : Header Data : Header Node
+		  2 : Other Nodes
+		  
+	if buffer_size not supplied : default 1024
+	if buffer_size == 0 : false
+	if buffer_size == 1 : false
+	if buffer_size > 1 : character Bit reserved in memory Block headed(pointed By)
+	by Base Node.
+		
+	
+3. concept of user-defined function.
+	
+	write a program in php to show user-defined functions
+	
+	1. function <any-function>($args1,$arg2,$arg3....,){
+	
+		//code statement
+	}
+	
+	function wish(){
+	
+		echo 'Hy! Good Morning...';
+	}
+	
+	wap a program in php to add number using user-defined function
+	
+	$no1 = readline('Enter the No 1:');
+	$no2 = readline('Enter the No 2:');
+	
+	echo add($no1,$no2);
+	
+	function add($no1,$no2){
+	
+		return $no1+$no2;
+	}
+		
+4. returning from a function : using return keyword inside function
+	the function should return a value we have already 
+	seen in add() function
+	
+5. using default argument in a function: if we want to make argument
+	optional (can pass or cannot pass ) in that case define a default
+	value to the argument in function declaration and definition
+	
+	function add($a,$b=0){
+	
+	}
+	
+	$a : mendatory Argument :The arguments which are compulsory 
+	
+	$b : Optional  Argument :The Optional are arguments have a default 
+	a value, which makes them optional, such that if we pass the value
+	$argument takes the assignecd value, if not, it is going to use the default value. this makes these arguments(parameters,inputs) as 
+	optional argument.
+	
+6. file-pointer and file handling :
+   file-pointer is special variable that store reference to memory 
+   allocation of a any file, 
+   $fp = fopen('anyfile.txt','mode')
+	
+   here $fp acts a  file pointer which is pointing to the reference
+   address of anyfile.txt
+   
+   $fp is also resource handler.
+   
+   file handling : Perform I/O Operation on the file, to store the data
+   permanently in the filesystem of Os is called file handling.
+   
+7. input output buffer or I/O Streams :
+	whenever we are going take input from standard input Devices
+	it is electrically converted into digital signal and stored 
+	in buffer by Bios.
+	which can be used by, Kernal (Core oF OS) to internally use 
+	this Input and Output values.
+	
+	I/B : Input buffer : stores all binary form of inputs taken 
+	from Input devices which are digitally converted from a anolog
+	signal in form of current.
+	
+	O/B : Output Buffer : stores all binary form of outputs and calculations calculated by ALU and sent to Primary Memory which is then stored at Output Buffer which can be transferred to,
+	any Output device.
+	
+8. using trim() function : it trucates, the extra spaces, and new line chracter from a input string
+
+variable($) and reference to variable($$) or variable to variable reference. in PHP :-
+******************************************
+1. variable is kind of Indentifier, used for storing the constant literal.
+	a variable is also a reference to memory.
+	
+what is Identifier?
+1. The name given to any thing is called as Indentifier.
+
+Example it can function name,class name, variable name,
+user defined naming convention is called as Identifier.
+
+Q1: 
+class Test{
+
+private $a;
+private $b;
+
+public function dance($msg){
+	printf("The Dance Function");
+	return $msg;
+}
+
+}
+
+Q:-How to many Identifier are there:-
+Ans:- 5 Identifier.
+
+Syntax:
+$<variable-name>=<some-value>;
+$x; //valid 
+but echo $x;
+
+
+Rules for making Identifier 
+*****************************
+1. total valid
+2. total_ valid
+3. total123 valid
+4. 123total invalid 
+5. _123total valid
+6. _total valid
+7_. _123 valid
+8. total_123 valid
+9. total 123 invalid
+10. is_passed valid
+11. is passed invalid
+12. _Total is valid
+13. TOTAL is valid
+14. TOTAL_ Is valid
+
+
+alphanumeric_(underscore is valid)
+but numericaplha_ is invalid
+
+allowed character : a-z A-Z _ (0-9){1th,nth} position where not allowed
+at 0th index
+special character cannot be used
+other than $and $$ only at 0th index
+for varible naming convention.
+
+in php variable names are case sensitive
+$name is different and $NAME is different and $Name is different and $NaMe is different.
+
+a varaible can hold any type of value depending on the data-type.
+for example:-
+1. a varaible can hold numerical values, like int,float.
+2. a varaible can hold a Boolean value like true,false.
+3. a varaible can hold a collection of values like array.
+4. a varaible can hold a value like empty or nullable value.
+5. a varaible can hold a Resource like mysqli Resource Object.
+6. a varaible can hold a string value B/w '' and "", heredoc, newdoc strings.
+7. a varaible can hold a Objects or instances.
+8. a varaible can hold, context of super globals (also called super 
+global varaibles)
+
+Note :: What is different B/w json_encode and json_decode?
+		json_encode :  php native data-type to json native reprensentation. the data representation is completly, raw.
+		
+		json_decode : json representation convert to php native datatype
+		raw data php data-type type.
+		
+Note :: we can use print_r() or var_dump() to print the output of the array.
+
+print_r(): prints the array or any resource in, readable form it only
+		show the data inside it.
+		
+var_dump() : it will dump the entire data about the varaible,
+			 hence var_dump shows the data or data, called ( meta data ).
+
+var_export() : Alias of var_dump(),same as var_dump but it show the reprensentation of the data in more readable. not meta data.
+
+Empty: a empty is a, value(with no value) having type as string and length as zero, and ordinality(Ascii) as 0.
+
+what is major different B/w null and undefined variable?
+1. $x='a';  isset($x) ---> return true.
+2. echo $x; print ---> a
+
+if you try these things with a undefined variable.
+$y;
+echo $y;  //undefined variable $y.
+since you are printing this with echo you will see nothing
+var_dump($y); //same error, undefined varaible $y but, data type NULL.
+
+isset($y); false ---> valid ---> $y does not exist at all --> $y is given memory.
+
+$z=null;	//$z ---> memory is allocated
+echo $z;    //no error ---> No Output will be generated.
+var_dump($z); //NULL without any error
+isset($z);  //false here $z is allocated into memory without any value.
+
+
+unset($y); //deletes from the memory
+echo $y; 
+unset($z); //deletes from the memory
+echo $z; undefined variable $z;
+var_dump($y); //undefined varaible ---> null
+var_dump($z); //no error ---> null
+unset($y); //
+unset($z); 
+var_dump($z); //undefined varaible ---> null
+var_dump($y); //undefined variable ---> null
+
+Super Global Varaible:- These are special with global context, and scope
+and these predefined varaible by php and it has been reserved, for 
+some special purpose
+
+Super Global varaibles are of two types:-
+1. Mangled Super Global Varaible.
+2. Non-Mangled Super Global Varaible.
+
+Super Global Varaible in generals
+There are 9 Super Global Varaible.
+
+$GLOBALS : non-mangled
+$_SERVER : mangled
+$_GET : mangled
+$_POST : mangled
+$_FILES : mangled
+$_COOKIE : mangled
+$_SESSION : mangled
+$_REQUEST : mangled
+$_ENV : mangled
+
+Other Super Global Variable:-
+$http_​response_​header : non-mangled
+$argc : non-mangled
+$argv : non-mangled
+$php_​errormsg : Deprecated
+
+Note :: Mangled : which with $ and _ as prefixed
+This naming convention is called name mangaling same thing is valid
+in python : __name__,__main__,__init(self)__
+in javascript : __proto__
+
+
+1. Mangled Super Global Varaible : are the varaible whose naming 
+convention is such that, they are declared using $ but have _ at prefix.
+
+for eg : normal varible $name,$class , $_SERVER, $_REQUEST,$_GET,$_POST
+
+2. Non-Mangled Super Global Varaible. are the variable whose naming convention are like normal variables and use no special prefixing like _ or __ they can be treated as normal variable in case naming convention only.
+
+for eg: $name, $class,$marks, $GLOBAlS,$argc,$argc,$http_​response_​header,
+$php_errormsg
+
+what is the difference B/w normal varaible and super global varaible:-
+
+1. SGV, are predefined but normal varaible are user defined.
+2. SGv, have global scope and normal varaible have local scope.
+3. normal variable do not have concept called name mangaling but super 
+   global variable have.
+   
+$GLOBALS : BOTH SAPI (CGI+CLI)
+$_SERVER : BOTH SAPI (CGI+CLI) But Environment Dependent.
+$_GET : SAPI :CGI
+$_POST :  SAPI :CGI
+$_FILES :  SAPI :CGI
+$_COOKIE : SAPI :CGI
+$_SESSION :  SAPI :CGI
+$_REQUEST : SAPI :CGI
+$_ENV : SAPI :CGI | CLI
+
+Other Super Global Variable :-
+$http_​response_​header : SAPI:CGI
+$argc : CLI
+$argv : CLI
+$php_​errormsg : BOTH | CLI | CGI
+
+What is SAPI?
+1. SAPI stands for server/system Application Programming Interface.
+it is,a type of Service, which recognises, the environment in which 
+execution of the program takes place.
+This service is, handled by Web-Server.
+
+wap in php to show different sapi name at different environment.
+Ans : Consider sapi.php
+
+<?php
+
+echo php_sapi_name();
+
+?>
+1. php sapi.php //cli
+2. php -S localhost:8000 //cli-server
+3. apache(laragon) ---> http://localhost:786/sapi.php //apache2handler
+							
+1)	what is sapi of $name='Ravi';?
+	a)cli
+	b)cgi
+	c)both (correct)
+	d)this is not super-global varible.
+
+2) what is correct value for $argc when you are running it at url : http://localhost:786/p1.php ?
+
+1) 1
+2) 2
+3) 0 (correct)
+4) 3
+
+Command line Arguments in PHP
+*********************************
+In Any Programming, langauge there are two types of inputs Environment.
+	1. Runtime Input : inputs or, arguments supplied during program
+	    execution is called as , Runtime Arguments.
+		for example:
+		scanf(), getch(), gets(), getc(), getchar()
+		
+		You can take input from these function, or you can supply the input , in these only when program is running in primary memory.		
+		
+	2. Compile Time, Input or Arguments:- The Arguments, supplied 
+		at compile time of the program is called command line arguments.
+		
+		in php we have two super global varibles for this
+		
+		1. $argc : argument count.
+		2. $argv : argument vector or argument variable.
+		3. They will under, only sapi mode = cli.
+		
+php -S localhost:8000
+     |   | CLI-arguments
+	 CLI-arguments
+	 
+The Properties of Command Line Argument:-
+1. The Command Line arguments are the arguments which supplied at Compile
+   compile time.
+   
+2. $argv : argument vector is responsible to accepting the arguments, 
+	at compile-time.
+3. $argc : holds the no of counts or no of varible arguments supplied,
+4. the type of $argc : is int type
+5. the default size of $argc is : 1
+6. the size of $argc = (n+1) where n is the no of arguments.
+7. $argc and $argv both work only under sapi == cli mode
+8. $argv and $argc are super global varaibles according to PHP standards.
+   in, the super global also they belongs to, category of non-mangled super global varaibles.
+9. $argv is a Hemogenous Array.
+
+   *********************************
+	Note :: In general in Any Programming langauge, Array are collection 
+			of constants Literals,
+			It has following classification
+			
+			1. On the Basis of data.
+			
+				1. Same and same : Homogenous.
+				2. different Type : Hetrogenous.
+				3. mixed Type : Hetrogenous
+				
+			2. On the Basis of Dimension.
+					1. 1-D Array (single Dimension, Linear Array)
+						
+					2. 2-D Array. (Multi-dimensional Array)
+					3. 3-D Array. (Multi-dimensional Array)
+					4. n-D Array. (Multi-dimensional Array)
+					
+			3. On the Basis of Structure/Nature.
+					1. Index Array
+					2. Mapped Array (Key and Value Pair)
+						Note:: There can be n of names, for the Mapped Array.
+						for Eg:
+							python ---> Dictionary
+							Java ---> HashMap
+							C# ---> HashArray
+							Javascript ---> ArrayOfObject
+							PHP ---> Associative Array
+							C++ ---> VectorArray
+							...
+							...
+	******************************************						
+10. $argv has homogenous type as string Array, i.e. is why it is also, 
+	string vector,
+11. the argv supports ssv only (space seperated values).
+12. The datatype of each, element either, float, or int, or boolean	
+	or array everything is converted to string only
+13. if you want supply spaced characters then we need to use "" otherwise
+	it will make all space seperated values as different Argument.
+14. The index 0 is always file_name
+15. Even though php is dynamic langauge, in command line arguments
+	it is stricted to string type, this is because, 0th element
+	index is a filename which is a string value, due to which 
+	the entire elements of different data-type are implicitly
+	converted to, string datatype.
+	
+Q: wap a program to find the sum, of all the Arguments supplied. from 
+Command line and Average 
+
+Hint: $argv, and $argc= count($argv)
+		|Array     |value
+$sum = 0;
+$sum = $sum + $argv[i];
+$avg = $sum/($argv-1)
+
+working with Anonymous Scripts:-
+************************************
+
+What is Meaning of Anonymous script ?
+
+1. Let us, consider a scenerio p1.java ---> what is family name of this program ---> java Family (.java extension)
+p2.py ---> Python Family (.py)
+p2.php ---> php family (.php extension)
+By looking at the extension only, we can Identify, Family or Type of Script.
+A file without extension are called as Anonymous File. and Such File
+are recognised as As FILE or <FILENAME Type>
+
+Why this concept is required?
+CodeIgnitor 4 : spark ---> php file
+Laravel :artisan ---> php file
+zwave :zwave ---> php file
+This is used, so that we can hide our, real code without allowing
+Os, to Identify the file type.
+
+
+Wap to make anonymous script in PHP?
+touch awnish
+start notepad awnish
+write the code of php
+
+varaible to variable reference ($$)
+***********************************
+creating the variable from the reference of existing varible it is denoted by 
+$$.
+use of this concept can be found in, codeIgnitor, laravel, Yii, Frameworks,
+where we want to pass the data from controller to view.
+
+Constants in PHP
+******************
+constant are identifiers which are resposible to hold, single value.
+if we try to assign a new values it will generate error.
+
+or
+The Identifier whose value, remains constant through out the execution of the
+is called as Constant.
+
+There are two types of constants
+1. pre-defined : in php there are 1800+ Predefined Constants.
+2. user-defined : user can create there own constants.
+
+pre-defined  : 
+	get_defined_constants() : list of all predefined constants
+
+Important Predefined Constants
+1. PHP_VERSION : returns version PHP
+2. TRUE : return 1
+3. FALSE : return nothing
+4. NULL : return nothing
+5. PHP_EOL :\r\n newline 
+6. PHP_SAPI : return the sapi name (cli|cli-server|apache2handler)
+7. PHP_OS : return os extension
+8. PHP_OS_FAMILY : returns Os name
+9. STDIN : return the resource object of standard Input.
+10. STDOUT : returns the resource object of standard output.
+11. STDERR : returns the resource object of standard error.
+
+Error Levels Constants: 16
+********************************			
+E_ERROR
+E_RECOVERABLE_ERROR
+E_WARNING
+E_PARSE
+E_NOTICE
+E_STRICT
+E_DEPRECATED
+E_CORE_ERROR
+E_CORE_WARNING
+E_COMPILE_ERROR
+E_COMPILE_WARNING
+E_USER_ERROR
+E_USER_WARNING
+E_USER_NOTICE
+E_USER_DEPRECATED
+E_ALL
+
+
+Errors Tree :
+			ERROR
+				|
+			  strict    			Non Strict (Recoverable)
+              (Encounter)              (warning)
+				1. compile				1. notice
+				2. parse				2. warning
+																						
+				<--------------Two Types ------------->
+					1. core 
+					2. user
+					3. deprecated
+					
+How to create the user-defined constants:-
+****************************************
+1. Procederal : 
+2. OOps : in case of interface, and Abstract Class.
+						
+Syntax of procederal user defined constants:-
+*********************************************
+1.  define('<Indentifier-name>',<value>,<case-sensitive-Boolean>);
+These constants have, global scopes, and can be accessed any-where.
+
+for eg:
+define('gravity',10);
+echo gravity;
+
+Properties of Constants:-
+*************************
+1. By default the declaration of constants are atomic,(declaration once) and   case-sensitive.
+2. The scope of, constants are global.
+3. the constants cannot be re-declared.
+4. if we want to make in-case-sensitive Constants we need to set 3rd argument in define 
+   as :true
+5. the in-case-sensitive, constants were deprecated in version 7.x, But this feature
+	is already supported. and in 8.x these features again supported.
+	
+Note : during this concept, we have two Error Raised, 
+1: E_DEPRECATED and 2: E_USER_DEPRECATED  
+
+E_DEPRECATED : reserved pre-defined standards of PHP deprecated error.
+E_USER_DEPRECATED : reserved for user-defined deprecated error.
+
+working with strings literals in PHP
+**************************************
+A varaible in php can hold any type of strings value, but in case of 
+output string, there is vast difference B/w '' and "" and its combinations.
+
+These Combination are Invalid:-
+1. '' inside '' : invalid
+2. "" inside "" : invalid
+
+These Combination are possible:-
+'' inside "" valid
+"" inside '' valid
+'' inside `` valid
+"" inside `` valid
+
+Note :: `` tick can be inside
+	'' or "" Qoutes only.
+	
+Types of Output Strings:-
+
+1. Raw String (single Qoutes): any string wrapped inside '' will be Raw string
+	 in this case, escape character sequence like, \n,\t,\f,\v,
+	 \r,\a, \b and varaibles are not processed.
+	 
+2. Processed String (Double Qoutes) : in case of processed, string every character 
+within "" will be processed.
+
+any string wrapped inside "" Qoutes are called as processed string.
+and they will process, each and every special character like escape sequences  \n,\t,\f,\v, \r,\a,\b and variables will also be processed.
+	
+3. HereDoc String : its works, under, Block Level 
+	syntax:
+	
+echo <<<BLOCK
+	This a Here Doc String, $a \n
+	"This is again New Line of string "$a" "
+BLOCK;
+
+or
+
+echo <<<"BLOCKNAME"
+	This a Here Doc String, $a \n
+	"This is again New Line of string "$a" "
+BLOCKNAME;
+
+heredoc, is capable of,  processing each and every possible combinations.
+
+1. escape characters sequence
+2. varible process
+3. multiple lines
+4. extra spaces 
+5. invalid combination '' inside '' and "" inside "" and `` inside ``
+6. Behaviour = processed string 
+hence, heredoc is also called Blocklevel Processed String or 
+Block level Double Qoutes String.
+7. The best use of heredoc is, to generate dynamic forms
+
+4. newDoc String : its works, under, Block Level 
+	syntax:
+	
+echo <<<'BLOCK'
+	This a new Doc String, $a \n
+	"This is again New Line of string "$a" "
+BLOCK;
+newdoc, is not capable of,  processing each and every possible combinations,hence
+generate the raw output.
+1. escape characters sequence not supported
+2. varible process not supported
+3. multiple lines support
+4. extra spaces support
+5. invalid combination '' inside '' and "" inside "" and `` inside `` support
+6. Behaviour = raw string 
+hence, newdoc is also called Blocklevel raw String or 
+Block level single Qoutes String.
+7. The best used of newdoc is, to generate static forms
+Types of Data Types :-
+1. scalar Data types (Fundamental DataTypes)
+	1. int
+	2. float,double
+	3. string
+	4. boolean
+	
+2. complex(compound) Data Types 
+	1.Array
+	2.Object
+	3.callable** (when OOps)
+	4.Iterable** (When OOps)
+	
+3. Special Data Types 
+	1. Resource  eg: mysqli Object, $fp Resource Object.
+	2. Null
+	
+All these are collectively called, 10 Primitive DataTypes.
+
+Types of PHP Tags :-
+1. Universal Tag or Simple PHP Tags <?php ?> enable 7.x
+2. ShortOpen Tag : <? ?> enable 7.x
+3. Asp Style Tag : <% %> disable 5.x  Deprecated in Version 7.x
+4. Script Style Tags : <script langauge="PHP"></script> disable 5.x Deprecated in Version 7.x
+
+php.ini holds are the settings of php intepreter.
+
+Types of PHP Scripts :-
+1. CORE PHP file.  
+	The entire code is of php, it should not contain any external langauge 
+	code.
+	Even you donot, close the closing of php tag, it will work fine
+	opening of php mendatory but closing of php tag is not mendatory.
+	
+	These core php files includes, libraries, functions, packages or classes 
+	which are written in plain php code only.
+	
+2. Hybrid PHP file.
+	The Hybrid PHP file is a file which contains mixed code, of, html, js, and other langauge including php file, in this case php closing is mendatory.
+	
+3. Inclusive PHP File : it is also same as, hybrid php file, but when this file included in any, core file it becomes inclusive php file.
+	It is recommended to, make an extension of
+	.inc.php to identify that that these files are inclusive php files.
+	
+wap a program to, restrict any file from Directly Running as main file
+
+what is difference b/w defined() and define()?
+1. defined() returns true or false if Constants is already defined.
+2. define() it defines the undefined constants.
+
+wap in PHP to make dynamic  web form using heredoc?
+wap in PHP to make static web form using newdoc?
+Note :: the Older Universal name of newdoc is since php version 5.x
+		and latest name of newdoc is Nowdoc string.
+		
+
+varaibles scopes:-
+In Any program, there can be only two types of scopes
+1. local scope
+2. global scope
+
+1. A varaible defined outside the block is at global scope
+2. A varaible defined inside a function is at local scope.
+
+
+1. You can access only, local varaible inside function
+2. If we try to access, global scope varaible it will be undefined.
+
+3. The local varaible gets the memory allocation at local scope ie at stack memory
+	while global varaible get the memory allocation at global scope ie at heap
+	memory hence if you want the value of global varible it should be accessed from
+	correct scope.
+	
+4. in order to access the global variable we declare global <variablename1,varaiblename,varaible3,...>; in tha first line of function before
+using the global variable.
+
+eg:
+function display(){
+global $b,$c,$n;
+$z=200;
+
+echo $c; //global 
+echo $b; //global
+echo $n; //global 
+echo $z; //local
+}
+
+5. Since, global variable is at, global scope if try to overwrite the value of global varaible the overall change is seen, in entire program.
+	Highly recommended to use, the varible at local but donot change the value at local.
+
+	6. The core concept with, local and global scope is that, outside the function,
+	the varaible occupies global scope without global keyword.
+	But inside function global scope requires global keyword.
+	
+	Eg:
+	for global scope outside the function
+	***************************************	
+	$a=200; //--->heap
+	echo $a; //200
+	
+	function display(){
+		global $a;
+		echo $a;  //200 ---->heap
+	}
+	
+	for local scope inside the function
+	**************************************
+	echo $a; //---> undefined
+	
+	function display(){
+		global $a; ----> heap
+		$a=100; ----> 100
+		echo $a; --->100
+	}
+	
+	echo $a; //--->heap ---> 100
+	
+	
+Working with Operators:-
+************************
+The PHP Supports Two versions of Operators
+
+1. Legacy Operators 5.x Version.
+	1. are re kaun log special bit assign karengey
+	
+	1. Arthematic Operator :  Used to perform Mathematical Operations.
+		1. +,-,*,/,%
+			Arthematic Operators are classified into two category
+			1. Unary Operators : 
+			2. Binary Operators :
+			
+			Expression  Evaluate  = 1 Operator + Operands
+			
+			1. Operand : Varaibles, constants Participating in mathematical Exprssion(Operations) is called Operands.
+				
+				Eg : $x+$y 
+					  |  |--->varaible (Operands)
+					  varaible
+						(Operands)
+						
+					  20+10 (Operands)
+					   |  |constants
+					   constants
+					   (Operands)
+					   
+			2. Operator : symbol B/w two Operands, with unique Property of Mathematical
+				solution is called as Operators.
+					
+					Eg:-
+					Add 2 and 2 = [_4_] ||||
+					2 + 2 =[4]
+					
+				
+			3. Expression : n of Operands, seperated By logical Arrangement of Operators.
+				Eg : /2+2 =Expression Invalid
+				Eg : +2/2 = Valid Expression
+				
+			4. Solution : The Result after Evaluating or Simplifying the  		Expression is called as Solution.
+			
+			Unary : Operators that can Bring the change in the value by prefexing
+			at the starting position.
+			
+			2 : 2>0 2 is a +ve Numbers : unsigned Integer
+		   -2 : 2<0 -2 is a negative Integer :signed Integer
+		   
+		   total Size Occupied By Int : 2 Bytes
+		   [+ or -][Number]
+			1 Byte  1 Byte
+		   [\][&][c][o][p][y][;][]
+		   I18N
+		  		
+			Note ::
+			In case of Division, 
+				Division it is divided into 2 types
+				1. float division (Complete Division)
+				2. int division (Partial Division)
+				
+				Complete Division, Dynamically Typed Langauge
+				Partial Division, Strict type langauge
+				
+				Eg:-
+				Dividend = divisor * Q + Rem (%)
+				Div - (divisor*Q) = Rem (%)
+				
+				If the langauge is strict Type
+				Other wise it will divide completely.
+				
+				Formula of Division.
+				********************
+				
+				1) int/int = int
+				2) float/float = float
+				3) float/int = float
+				4) int/float = float
+				
+				Q*(r/d) = D/d
+				
+				
+				What is Way
+				***************
+				1.  using Typecasting : intval().
+				2.  using sprintf().
+				3.  using flooring concept.
+				
+				
+				1. What is intval() ?
+				************************
+				it is predefined function, typecasting
+				or convert one type of value to the integer value.
+				
+				2. What is this sprintf() :
+				*****************************
+					sprintf stands for, string printf: it will return 
+					the output generated by printf. instead of printing
+					you can hold it in any variable.
+					
+				
+				3. using flooring concept:
+				In Mathematics, computations (calculation).
+				There is a concept of floor() and ceil()
+				
+				Floor : floor() : it returns the lowest Integer by removing the decimal Point.
+				
+				ceiling fan : ceil()
+				
+				ceil : it returns, the Incremented
+				value of lowest Integer.
+				or
+				it truncates, the value of decimal part
+				and return a incremented value of lower
+				integer.
+				
+				
+				Eg:
+				2.4 ---> 2 ---> Lowest Integer
+				floor(2.4) ---> 2 + 1 ---> 3 ---> Ciel
+				
+				ceil() = floor(n) + 1 where n is floating.
+				
+				
+				Note :: when the number is floating
+				point then only floor and ceil will
+				work.
+				
+				
+				
+Note the difference B/w ceil, floor, round
+php > echo round(2.5);
+3
+php > echo round(2.5);
+3
+php > echo round(2.4);
+2
+php > echo ceil(2.4);
+3
+php > echo ceil(2.5);
+3
+php >      
+				
+	
+	2. Relational Operator : are used for comparison.
+		1.Equality Relation	
+			1. strict Equality : a==b, a===b
+					1. value comparsion a==b
+					2. value with type comparsion a==b
+			2. slack Equality
+					1. less equal to. (<=)
+					2. greater than equal to. (>=)
+								
+		2.In-equality Relation 
+			1. unequal (not equal) 
+				1. != (Not Equal)
+				2. <> (Never Happen)
+			2. strict In-equality
+				1. > (greater than)
+				2. < (less than)
+				
+				Result will be always boolean true or false.
+				Note :: except, slack equality all are simple relation.
+				where as slack equality is a compound relations.
+		
+	
+	3. conditional Operator : are the part of ternary Operator.
+	  and called as, short hand notation of if-else
+	  
+	  <expression or condition>?return <true>:return <false>;
+	  These are called ternary Because of Three Operands
+	  
+	  if expression is true then true will return else false will return.
+	  
+	  Eg:
+	  $a = 10;
+	  $x = ($a>2)? "hi" :"hello";
+	  echo $x;
+	  
+	  Task:-
+	  ***********
+	  1. wap to find |x|
+	  2. wap to find odd & even 
+		1. time and space complexity.
+	  3. wap to find +ve and -ve 
+	  without using if-else.
+	  4. wap to find perfect number.
+	  Hint:-
+	  6 is perfect number
+	  1,2,3 = 1+2+3 = 6 using Recursion.
+ 
+	4. logical Operator :  These are used to perform conjuction, B/w
+	two conditions.
+	1. && : Match all the condition to be true. (AND Gate Operation)
+	2. || : Match one or more condition to be true. (OR Gate Operation)
+	3. ! : reverse conditions. (Not Gate Operation)
+	
+	&&
+	***
+	A | B | A && B
+	***************
+	0 | 0 | 0
+	0 | 1 | 0
+	1 | 0 | 0
+	1 | 1 | 1
+	******************
+	
+	||
+	***
+	A | B | A || B
+	***************
+	0 | 0 | 0
+	0 | 1 | 1
+	1 | 0 | 1
+	1 | 1 | 1
+	******************
+	
+	||
+	***
+	A | !A
+	**********
+	0 | 1 
+	1 | 0
+	**********
+	
+	5. special Operator : PHP Supports Few Operators which are reserved
+		for special purpose and are called as, Special Operators.
+	
+		Special Operators have Following Types:-
+		1. Modify Operators
+			1. pre Modify 2. Post Modify
+			--$i, ++$i      $i++, $i--
+		2.	Reference Operators (&)  : In case of call By Reference.
+		3.  String Operator (Concatenation Operator)
+			1. Concatenation  2. Append Operation.
+		
+		4. Array Operators.
+	
+	6. Bitwise Operator.
+	7. Assignment Operator :it is used to Assign the value of Evaluated Expression
+	from Right to Left.
+	
+	$sum = $sum + n; ----> $sum+=n;
+	$sum = $sum * n; ----> $sum*=n;
+	$sum = $sum / n; ----> $sum/=n;
+	$sum = $sum % n; ----> $sum%=n;
+	$sum = $sum . n; ----> $sum.=n;
+	
+	Question :-
+	
+	  #$x+=1 and $x=+1 and $x++ ??
+	# Increment by 1 $x+=1
+	# $x is assigned by +1
+	#  Another form of, $x++ Increment = post 
+     increment.	
+	
+2. Modern Operators 7.x Version.
+	1. Membership Operator
+	2. NullCoalescing Operator
+	3. Flagship(space-sphip) Operators. 
+	
+
+String Operator (Concatenation Operator)
+1. Concatenation  2. Append Operation.
+
+use to concate the values , together
+we know that, PHP nature is Dynamic, it will type caste int,values to string
+for concatenation.
+
+since this, concatenation will be performed on the string data types only
+hence called as string Operators.
+
+Difference B/w concate Operator
+and Append Operator.
+
+.= (String Assigment Operator)
+once used, concate Operator
+
+.= (String Assigment Operator)
+mulitple times used, append Operator
+
+wap in PHP to make user-defined string_repeat function which, repeat the string
+n no of times
+
+string_repeat('H',10);  ---> HHHHHHHHHH or
+str_multiply('H',10); ----> HHHHHHHHHH
+
+Array Operators :- 
+[] --> Subscript Operator --> Index Operator ---> Key Operator
+
+In order to declare the Array we can use [] subscript Operator.
+We can few mathematical Operation to perform, Array Operation
+
+1. Union of Array : + Operator
+2. Slack Equality of Array (value Equality) : ==
+3. Strict Equality of Array (value and type(order) Equality) or Indentity Operation: ===
+4. Not Equal Array : !=
+5. UnIdentical Array Operations. !==
+
+1. Membership Operator : && --> and || ---> or ^ (xor) ---> xor
+2. NullCoalescing Operator : ??
+3. Flagship(space-sphip) Operators. (<=>)
+
+
+Flow controls In PHP
+********************
+What is the flow controls  in Programming :-
+Flow controls means how you program will execute in Primary Memory, at Runtime.
+
+What is Normal Execution of the Program?
+
+There are Two Approach of the Normal Execution of the program
+1. Top to Bottom Approach:
+	The Program will start from very first line of the program, and stop at last line 
+	of the program then it is called normal execution of program in T-B Approach.
+	
+	How many ways we can control it:-
+	1. Decision Control Block : it allows the user, to control the execution of specific
+		line of code.
+			1. Selection Block
+			2. Conditional Block
+			3. Nested Conditional Block
+	2. Return Control Blocks
+	3. Loop Control Blocks
+	4. Jump Control Blocks
+	
+	Note :: statements : Line or peice of code inside the Block, and Structure wrapping
+	those line of statement is called as Block.
+	
+2. Left to Right Program
+	Whenever a an expression is solved, it will be solved, from left to Right by default.
+	But if we want to control the normal execution, we can modify it to, right to left.
+	This can be done by using Operators.
+	Operators will utilise, Associativity and Precedence Order to achieve this.
+	Eg 1:
+	2+2+2-2 L-R (+,- Operator Associativity L->R)
+	$x=2+2 R-L (= Operator Associativity R->L)
+	
+	Execution L->R
+	echo "The Result = ".10+20;   Associativity L->R 
+	^
+	|----> L->R
+	Error : non-numeric value encountered error, because (.) has highest Priority then +/- 	
+	if we use () parenthesis. 
+	Execution R->L
+	echo "The Result = ".(10+20);
+							^
+					L<-R <--| 
+	step :- echo " The Result = ".30;
+				  ^
+				  |----> L->R 
+	
+	
+
+
+Selection Block : 
+	Switch Block : 1. when we have, multiple cases, and we want to execute, a given case
+					 then we go for, switch Blocks (statements).
+				   
+				   2. switch statement are considered to be best alternative, of else-if 
+				   ladder.
+				   
+	Switch are of Two Types
+		1. unchained switch.
+		2. chained switch.
+		
+		
+		General Syntax of Switch Block
+		******************************
+		
+		switch(<Evaluated Expression>){
+			case <value-1>:
+					//statement 1
+					....
+					//statement n
+				break;
+				
+			case <value-2>:
+					//statement 1
+					....
+					//statement n
+				break;
+				
+			case <value-n>:
+					//statement 1
+					....
+					//statement n
+				break;
+				
+		  default:
+				//statement 1
+				...
+				//statement n
+		  break;
+		
+		}
+		
+		
+		Note : 	Expression ---> Evaluate ---> Result
+		2>2  ---> true or false Invalid 
+		This Expression should be equal to one of case.
+		
+How to check Type of Character values:-
+PHP Provides ctype function from <ctype.h> header file.
+********************************************************
+Character =  type string and length 1 and Ascii value range Alphabets.
+
+ctype_alnum — Check for alphanumeric character(s)
+ctype_alpha — Check for alphabetic character(s)
+ctype_cntrl — Check for control character(s)
+ctype_digit — Check for numeric character(s)
+ctype_graph — Check for any printable character(s) except space
+ctype_lower — Check for lowercase character(s)
+ctype_print — Check for printable character(s)
+ctype_punct — Check for any printable character which is not whitespace or an alphanumeric character
+ctype_space — Check for whitespace character(s)
+ctype_upper — Check for uppercase character(s)
+ctype_xdigit — Check for character(s) representing a hexadecimal digit
+		
+Chanining Effect in Switch:-
+***************************
+a switch statement without any break is called as unchained switch and this effect
+is called as chaining effect.
+
+Inorder, to break the chaining effect in, switch we use minimum one break, statement for each case block.
+
+How to break the, chain in switch
+1. break : break the switch execution.
+2. exit : terminate the entire program.
+3. return : it will return the execution from bottom to Top.
+4. goto exit_label; it will take the execution of the program where ever we want.
+
+
+What is order of execution of switch block with break statement
+if condition = $x%2 having sample space = {0,1} and default at (n+1) position.
+
+1) O(1)  correct
+2) O(2)
+3) O(3)
+4) O(4)
+
+What is order of execution of switch block without break statement
+if condition = $x%2 having sample space = {0,1} and default at (n+1) position.
+
+1) O(1)
+2) O(2)
+3) O(3)
+4) O(4)
+5) O(n) correct
+
+What is max order of execution of switch block without break statement
+if condition = $x%2 having sample space = {0,1} and default at (n+1) position.
+
+1) O(1)
+2) O(2)
+3) O(3)  correct
+4) O(4)
+5) O(n)
+
+What is min order of execution of switch block without break statement
+if condition = $x%2 having sample space = {0,1} and default at (n+1) position.
+
+1) O(1)
+2) O(2) correct
+3) O(3)
+4) O(4)
+5) O(n)		
+
+
+Types of labels
+1. empty label : <lable-name>:; it does not contain any, statement within, label block
+
+2. container label : its a label block which will contain minimum one statement.
+exit_label: 
+printf("This is One statement");
+
+Type of labelled blocks in switch
+*********************************
+1. case blocks
+	1. inner case blocks
+	2. outer case blocks
+2. default blocks
+	1. inner default blocks
+	2. outer default blocks
+
+	Note :: This Blocks definition is Optional
+	Note :: This syntax is support in C langauge But PHP does not supported Outer Label Blocks but supports inner label blocks.
+	
+	The labelled block of switch allows only 256 cases as de-limiters(seperator) for 8 Bit Compiler
+	similarly for n-bit total no of cases = 2^(n) Cases.
+	
+Note :: using Automatic Script for, Testing
+
+Some times, In order to perform white box testing, for each and every project,
+becomes very hactic, so we can build a autonomous bot script to execute the program according to test cases.
+
+working with break in default case :-
+************************************
+if there are n no of cases then the actual position of default is at (n+1)th.
+if default case is at (n+1)th condition in this case, break statement is 
+optional,
+
+if default case position is at any condition B/w (1-n) then break becomes 
+mendatory, other wise, consecutive chaining effect will be seen.
+
+Multiple Correct
+*******************
+what is order(n) in switch block for default case without break at position
+B/w (1 to n)th.
+
+a) 1th
+b) 2th
+c) nth (correct)
+d) (n+1)th (correct)
+
+
+Conditional Block : if we want to execute some line of code on the basis of some 
+given condition, which is not hardcoded, then we must go for decision Block.
+
+Note :: hardcoded  and softcoded
+Harcoded
+************
+if($email=='ravi@gmail.com' and $password =='1234'){
+	echo 'login success';
+}else{
+   echo 'Invalid user name or password';
+}
+
+Softcoded
+************
+if($email==$dbemail and $password ==$dbpassword){	
+	echo 'login success';
+}else{
+   echo 'Invalid user name or password';
+}
+
+How to Apply Condition Block
+*****************************
+We can use decision control langauge construct or Keywords
+1. if 
+2. if-else 
+3. else-if ladder 
+
+1. syntax of if : 
+*******************
+	if(<Boolean-condition>){
+		// execute this line only if above condition true
+	}
+	
+	1. true ---> condition true ---> execution once 1 times.
+	2. false ---> condition false ---> exection 0 times.
+	3. '',null,false,0 all are treated as boolean false.
+	all Other values will taken boolean false.
+	
+	
+...Notes Suraj Class session...
+Nested Conditions:-
+1. One Block Inside another Blocks
+This can take any form.
+
+1.  Symmetical Nesting or Indentical Nesting.
+	Block will be used for same Kind.
+		1. if Block nested with If Blocks
+		2. if else Block nested inside if else Block
+		3. switch Block nested inside switch Block
+		4. else-if ladder nested inside else-if Block 
+	 
+2. Un-symmetrical Nesting.
+	This means One Block will be inside another, but will not belong to the same family.
+	
+	Prime Number Program using if-else 1 to 100
+	How many primes are there in 1 to 100 : 25
+	1 to 100
+	2,3,5,7,11
+	
+Looping Statements:-
+********************
+How to looping statements
+1.step 1: start from any infinite Loop
+	for(;;)
+	while(true)
+2. step 2 : Add a Counter to start the condition
+3. step 3: Add a If Block with Break to terminate the Condition.
+
+	
+How to convert Above Syntax For Loop
+1. copy starting and Put in First Block of for
+2. Copy the Modify Operator and put in last Block of for
+3. copy the if Block of break statement Inverse condition and 
+put the in middle Block
+
+if($i>=100){
+ 	break;
+}
+	 
+$i>=100 <----> $i<=100
+
+1. if Loop has a body no need of semicolon
+2. if loop does not have a body 
+then semicolon is mendatory.
+
+Introduction to PDBC (PHP Database Connnectivity)
+
+****************************************************
+PDBC : Connecting PHP Application with Database is called php 
+database connectivity.
+
+Why PDBC ?
+If we want to make Application where storage of data is important
+such that using that data one can drive entire, Enterprise then we require database.
+
+How to connect PHP Application with Database
+1. mysql : Mysql
+2. PDO : PHP Database Object (It support n no of databases.)
+
+Connecting PHP Application to Mysql
+************************************
+localhost:786/adminer/
+
+System : mysql
+server : localhost:3308
+username: root
+password:
+database:
+Login Click
+
+Step to Connect with Database:-
+********************************
+1. Make Database Connection using mysqli_connect function, 
+	by supplied hostname:port,username,password,dbname
+2. Test For the Connection created Or Not
+3. Use Exception Handling to Handle Any Error Occured
+4. Prepare the Query.
+5. Execute or Fire the Query.
+6. If Query is Writable, look for the changes.
+7. If Query is Readable, Capture the Result Set.
+8. Look for the No of Matched Records as per Query.
+9. Convert the MYSQL Result Set into Associative Array.
+10. use if for single Record or Foreach or while for multiple Record.
+11. Perform All Other Operation Required As per Requirement.
+
+Exception Handling:-
+********************
+What are Exception:- Exception are the Logical Bugs or error that are 
+Occured  during execution of the Program for some special condition match.
+
+When ever Exception are Occured the Program would terminate suddenly.
+In Order to Handle Exception we have special Block of code 
+which are used to handle Exception.
+
+Exception Handling using try-catch-finally Block
+***********************************************
+try : this blocks tries to execute the code placed inside this Block.
+	  if some Exception is raised then it will be send to catch block.
+
+Catch : Catch Block is used, to raise the Exception.
+Finally : Finally Block will execute the code at any condition 
+		  Either the Exception is raised or not.
+		  
+throw : it used to throw any new Exception to the catch Block
+			
+Example :- One Such type of Exception are, Mathematical-Error,SQLException-Error
+Mathematical-Error Error will occur as soon as Divisor = 0 which
+will generate Infinity.
+
+Connecting to Mysql Database
+*******************************
+
+In Order to connect to database 
+1. $conn = mysqli_connect($hostname,$username,$password,$dbname);
+
+$dbname is Optional
+$dbname : app2021
+
+$hostname : localhost:<port-no>
+			or
+			<ip4 or ip6>:<port-no>
+			
+if by default port is 3306
+			localhost
+			127.0.0.1
+		
+$username : Root (by-default) depends upon System to System.
+			system (by-default) mongo-Db, Oracle.
+			PC-NAME (by-default) SQL server.
+			
+$password : Blank '' or ""
+
+Best Practise to be used while making Project
+*********************************************
+in a Project, there may n no of constants, n of important varaible 
+which will hold some important credentials or settings.
+Adding all these configuration into a file like
+settings.php
+env.php
+.env
+config.php
+...
+...
+...
+
+CRUD in PHP:-
+**************
+Any Application in Entire world, it will use mainly one principal 
+called Crud to manage Any data.
+
+1. C : create the Any Thing in db (table,data,)
+	   Insert Query.
+		
+2. R : Read the Data from the database.
+	   Select Query.
+		
+3. U : Update the Data from the database.
+	   Update Query.
+
+4. D : Delete the Data from the database.
+	   Delete the Query.
+	   
+1. Registration : create
+2. Change Profile : update
+3. Change Password : update
+4. login : select
+5. set Profile Pic : insert/Create
+6. delete Account : delete
+7. logout logic  
+8. Book Appointment :  insert
+9. Add to cart : insert
+10. Remove from the cart : delete
+11. Show Product : select
+12. show category : select
+13. show department : select
+14. All Jobs : select
+15. Trending Jobs : select
+16. Buy Now : Insert
+17. forget Password : select ---> update
+18. Order-delivery status : order now ---> insert ---> update ,update, update
+19. Booking Cancelled : update
+20. No Record Found : Deleted
+
+ 
+What are writable Query
+***********************
+All Query which perform some changes to the Database is called as, writable Query.
+insert,update,delete
+
+All Query which donot perform any changes but returned the set of records
+all called readable Query  for example select
+So the set of Records Obtained by select Query is called Result Set.
+
+Result set : collection of Rows Obtained by select Query
+Result Set count = 0 Not Record Found
+Result Set Count = 1 Data is Unique
+Result set Count > 1 Data is More and can be duplicate
+
+if Result set count == 1 then use if
+if Result set Count > 1 then use loops (for,foreach,while)
+
+After Getting the Result set, Convert the Result set into Associative Array.
+
+Wap in PHP to show, How to Handle Associative Array using Foreach
+*******************************************************************
+
+1. Introduction to Json:-
+json: javascript Object Notation
+Json is not type of Technology, Programming Langauge, Tools
+It is just a standard data Convetion
+
+Tags : Data ---> Html
+Tags : Data ---> XML
+Data : Represent ---> Key and value pairs ---> such that it is highly transpotable over a network then it is called as, JSON.
+
+1. object : {}
+Eg :-
+{"name":"awnish","class":"12th","marks":50}
+	|Keys  |value  |keys   |value  |key |value
+	
+2. Array : [Element1,Element2,Element3...]
+3. Array of Object
+	[
+		{"name":"awnish","class":"12th","marks":50},
+		{"name":"awnish","class":"12th","marks":50}
+		{"name":"awnish","class":"12th","marks":50}
+		{"name":"awnish","class":"12th","marks":50}
+	],
+	[
+		{"name":"awnish","class":"12th","marks":50},
+		{"name":"awnish","class":"12th","marks":50}
+		{"name":"awnish","class":"12th","marks":50}
+		{"name":"awnish","class":"12th","marks":50}
+	],
+	[
+		{"name":"awnish","class":"12th","marks":50},
+		{"name":"awnish","class":"12th","marks":50}
+		{"name":"awnish","class":"12th","marks":50}
+		{"name":"awnish","class":"12th","marks":50}
+	]
+	
+	This format of data is called as, Document Data format.
+	
+
+
+
+
+
+
+
+
+
+		
+
+
+
+			
+			
+			
+
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+
+
+
+
+
+ 
+
+
+				   
+
+
+
+
+
+
+
+	
+	
+
+
+
+	
+
+
+ 
+
+
+
+
+
+ 	
+
+	
+	
+	
+	
+	
+	
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+	
+
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	 
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+	  
+		
+
+
+	
+
+		
+		
+
+
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+	
+	
+	
+
+
+
+
+	
+	
+	
+	
+	
+	
+ 

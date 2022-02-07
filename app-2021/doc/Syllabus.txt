@@ -1,0 +1,1092 @@
+Syllabus of Full Stack Developement Using PHP
+*********************************************
+Total No of Hours 3 Daily
+Total Days 75 Days
+Lecture Cost : 55k 
+Levels : All Levels Beginner to Advance
+
+Web-Standard and Website Basic Terminology
+Protocols
+Web-Architectures
+Javascript and Asynchronous programming
+Regular Expression
+Front End Validation on Submit
+Front End Validation using Bootstrap
+Font End Validation using Parsley.Js
+Localstorage and Crud Application using Js
+Ajax Calls and JSON Architecture, YML, Json Objects Parsing and Dynamic Json Objects
+Javascript Event Loops
+Javascript Array Datastructures
+
+JQuery Section
+********************
+
+jQuery Introduction 
+jQuery Implementation 
+jQuery Implementation with CDN 
+jQuery Basic Syntax 
+jQuery Selectors 
+jQuery Mouse Events 
+jQuery Keyboard Events 
+jQuery Form Events 
+jQuery Window Events 
+jQuery Get Methods 
+jQuery Set Methods 
+jQuery addClass & removeClass Method 
+jQuery CSS Method 
+jQuery On & Off Method 
+jQuery Append & Prepend Method 
+jQuery After & Before Method 
+jQuery Empty & Remove Method 
+jQuery AppendTo & PrependTo Method 
+jQuery Clone Method 
+jQuery ReplaceWith & ReplaceAll Method 
+jQuery Wrap & UnWrap Method 
+jQuery WrapAll & WrapInner Method 
+jQuery Width & Height Methods 
+jQuery Position & Offset Method 
+jQuery scrollTop & scrollLeft Method 
+jQuery hasClass Method 
+jQuery Hide Show & Toggle Method 
+jQuery fadeIn, fadeOut, fadeToggle, fadeTo 
+jQuery slideUp , slideDown & SlideToggle 
+jQuery Animate Method 
+jQuery Stop Method 
+jQuery Method Chaining 
+jQuery parent, parentsUntil, closest, offsetParent 
+jQuery Children & Find Method 
+jQuery Sibling, next, nextUntil, prev, prevAll, prevUntil 
+jQuery First, last, eq, not, slice 
+jQuery has & Is Method 
+jQuery each Method 
+jQuery pageX & pageY 
+jQuery Event Type 
+jQuery Event Which Property 
+jQuery Event Target Property 
+jQuery Event preventDefault Method 
+jQuery Event stopPropagation Method 
+jQuery Event Data Property 
+jQuery Plugin introduction 
+
+Rest Architecture and security
+******************************
+
+REST API - Introducing REST
+REST API - The Need for REST
+REST API - Restful Web API
+REST API - A Comparison of APIs
+REST API - An Intuitive understanding of REST
+REST API - REST Constraints
+REST API - Concept of Serialization
+REST API - The Concept of Deserialization
+REST API - Richardson Maturity Model
+REST API - Tools Required for Demo
+REST API - Understanding HTTP Request
+REST API - HTTP Request Methods
+REST API - Analyze HTTP Response?
+REST API - Designing REST URLs
+REST API - Controllers and Actions
+REST API - Creating Routing Templates
+REST API - Understanding Routing Attributes
+REST API - Using Parameters in Requests
+REST API - Model Validation
+REST API - Creating Domain Models
+REST API - Scaffolding Controllers
+REST API - Database Seeding
+REST API - Migrations
+REST API - Using DTOs
+REST API - Implementing Paging
+REST API - CORS and Enabling CORS
+REST API - Deferred Execution
+REST API - Introduction to Caching
+REST API - Expiration Model
+REST API - Validation Model
+REST API - Cache control Directives
+REST API - Concurrency in REST
+REST API - JSON Serialization
+REST API - Model Validation
+REST API - Caching Demo
+REST API - Understanding HATEOAS
+REST API - Approaches to Returning Hypermedia Data
+REST API - HAL and Collection + Json
+REST API - Versioning REST APIs
+REST API - Versioning Demo
+
+Web-Security and Penetration Testing
+************************************
+
+What is Web Application Penetration Testing
+Penetration Testing - Overvie
+Penetration Testing - Testing Environment Setu
+Penetration Testing - Virtual Box Setup
+Penetration Testing - Kali Linux Setu
+Penetration Testing - Metasploitable Linux
+Penetration Testing - Scanning the Targe
+Penetration Testing - Shodan.io Overvie
+Penetration Testing - HTTRACK Overview
+Penetration Testing - NMAP Overview
+Penetration Testing - NMAP Scripting Engine
+Penetration Testing - Metasploit Overview
+Penetration Testing - Wireshark Overview
+Penetration Testing - HTTP Basics
+Penetration Testing - Net Cat Overview
+Penetration Testing - Curl Overview
+Penetration Testing - Burp Suite Overview
+Penetration Testing - Cookies Basics
+Penetration Testing - Sessions Basics
+Penetration Testing - Injection Attacks
+Penetration Testing - Cross Site Scripting
+Penetration Testing - HTML Injection
+Penetration Testing - Command Injections
+Penetration Testing - XXE Injections
+Penetration Testing - X Path Injections
+Penetration Testing - SQL Injection
+Penetration Testing - Login Page SQL Injection
+Penetration Testing - Mongo DB Injection
+Penetration Testing - CSS Injection
+Penetration Testing - Un-validated Redirects
+Penetration Testing - File Inclusion Vulnerability
+Penetration Testing - Local File Inclusion (LFI)
+Penetration Testing - Remote File Inclusion (RFI)
+Penetration Testing - File Upload Vulnerability
+Penetration Testing - Security Misconfiguration
+Penetration Testing - Path Traversal Attack
+Penetration Testing - Cross Site Request Forgery (CSRF)
+Penetration Testing - Server Side Request Forgery (SSRF)
+Penetration Testing - Buffer Overflow
+Penetration Testing - Insecure Direct Object Reference (IDOB)
+Penetration Testing - Captcha Testing
+Penetration Testing - HTTP Basic Authentication Cracking
+Penetration Testing - Formula Injection
+
+Git For DevOps Topics
+*************************
+
+Topic-1: Introduction to Devops
+ 1.1. What is Devops?
+1.2. Water Fall Model
+1.3. Agile Model
+1.4. Water fall vs Scrum
+1.5. Devops vs Agile Models
+1.6. Top Important points about DevOps
+ 
+Topic-2: Introduction to Version Control System
+ 2.1. Need of Version Control System?
+2.2. How version control system will work?
+2.3. The basic terminology of version control system
+2.4. Benefits of Version Control System
+2.5. Types of Version Control Systems
+ 2.5.1. Centralized Version Control System
+ 2.5.2. Distributed Version Control Systems
+Topic-3: Features and Architecture of GIT
+3.1 What is GIT?
+3.2 Features of GIT
+3.3 GIT Architecture
+Topic-4: Life Cycle of File in GIT:
+4.1 Untracked
+4.2 Staged
+4.3 In Repository/ Committed
+4.4 Modified
+Topic-5: Git Installation On Windows
+Topic-6: Example-1 To Understand Working Directory, Staging Area and Local Repository
+Topic-7: The 6 Git Commands With Example - init,status,add,commit,log and config 
+Topic-8: The complete postmortem of git log command 
+8.1 How to see history of all commits in local repository
+8.2 How to see log information of a particular file
+
+Git For DevOps
+ Option-1: --oneline option to get brief log information
+Option-2: -n option to limit the number of commits to display
+Option-3: --grep option to search based on given pattern in commit message
+Option-4: Show commits more recent than a specific time.
+Option-5: Show commits older than a specific time
+Option-6: Show commits based on author
+Option-7: --decorate option to display extra information
+Topic-9: The Complete Story of git diff command
+Case-1: To see the difference in file content between working directory and staging 
+ area
+Case-2: To see the difference in file content between working directory and last 
+ commit
+Case-3: To see the difference in file content between staged copy and last commit
+Case-4: To see the difference in file content between specific commit and working 
+ directory copy
+Case-5: To see the difference in file content between specific commit and staging 
+ area copy
+Case-6: To see the difference in file content between two specified commits
+Case-7: To see the difference in file content between last commit and last butone 
+ commit
+Case-8: To see the differences in all files content between two specified commits
+Case-9: To see the differences in content between two branches
+Case-10: To see the differences in content between local and remote repositories
+Topic-10: Helix Visual Merge Tool(p4merge) For Checking Differences
+Topic-11: Removing files by using git rm command
+Case-1: To remove files from working directory and staging area(git rm) 
+Case-2: To remove files Only from staging area (git rm --cached)
+Case-3: To remove files Only from Working Directory (rm command)
+Topic-12: Undo changes with git checkout command
+Topic-13: Git References ( master and HEAD )
+Topic-14: Git reset command
+ Utility-1: To remove changes from staging area
+ Utility-2: To undo commits at repository level(--mixed, --soft, --hard modes)
+Topic-15: Git Aliases - Providing our own convenient names to git commands
+Topic-16: Ignoring unwanted files and directories by using .gitignore file
+Topic-17: Any Special Treatment for directories by Git ???
+
+Git For DevOps
+Topic-18: Branching And Merging
+ 18.1. What is branching?
+ 18.2. Need of creating a new branch
+ 18.3. Various Commands used in branching
+ 1. To view branches 
+ 2. To create a new branch
+ 3. To switch from one branch to another branch
+ 4. Short-cut way to create a new branch and switch to that branch
+ 18.4. Demo Example for branching
+ 18.5. Multiple use cases where branching is required
+ 18.6. Advantages of Branching
+ 18.7. Merging of a Branch
+ 18.8. What is Fast-forward Merge?
+ 18.9. What is Three-Way Merge?
+ 18.10. Differences between Fast-forward and Three-way Merges
+ 18.11. Merge Conflicts and Resolution Process
+ 18.12.How to Delete a Branch
+Topic-19: Merging by using Rebase 115
+ 19.1 Process of rebasing
+ 19.2. Demo Example for rebasing
+ 19.3. Advantages of rebasing
+ 19.4. Disadvantages of rebasing
+ 19.5 Differences between Merge and Rebase
+Topic-20: Stash in GIT 125
+ 20.1 What is git stash?
+ 20.2 Demo Example for stashing
+ 20.3 How to list all available stashes?
+ 20.4 How to check the contents of stash?
+ 20.5 How to perform unstash?
+ 20.6 Partial Stash
+ 20.7 How to delete the stash?
+
+Git For DevOps
+Topic-21: Working with Remote Repositories
+ 21.1) Need of Remote Repositories
+ 21.2) How to work with GitHub?
+ 21.3) How to create account in GitHub?
+ 21.4) How to create a new reposioty in Github?
+ 21.5) How to work with Remote Repository?
+ 1) git remote
+ 2) git push
+ 3) git clone
+ 4) git pull 
+ 5) git fetch
+Topic-22: Git Tagging (git Tag Command)
+ 22.1) Introduction to Tagging
+ 22.2) Creation of a Light Weight Tag
+ 22.3) How to delete a tag?
+ 22.4) Annotated Tags (Tags with Information)
+ 22.5) How to tag a previous commit?
+ 22.6) How to update an existing tag?
+ 22.7) How to compare Tags
+ 22.8) How to push tags to remote repository?
+Topic-23: git revert Command
+ 23.1) Need of revert command
+ 23.2) Demo Example to revert last commit
+ 23.3) Demo example to revert a particular commit
+Topic-24: Cherry-Picking (git cherry-pick Command)
+ 24.1) Need of Cherry-Picking
+ 24.2) Use cases of cherry-pick
+ 24.3) Demo Example for cherry-picking
+Topic-25: git reflog Command
+
+GOF (Gang of Four) In PHP
+*************************
+23 Patterns Design Pattern
+Creational
+**********
+Abstract Factory
+Builder
+Factory Method
+Prototype
+Singleton
+
+Structural
+***********
+Adapter
+Bridge
+Composite
+Facade
+Flyweight
+Proxy
+
+Behavioral
+*************
+Chain of Responsibility
+Command
+Interpreter
+Iterator
+Mediator
+Memento
+Observer
+State
+Strategy
+Template Method 
+Visitor
+
+Core PHP Concepts
+******************
+Chapter 1: Getting started with PHP
+Chapter 2: Alternative Syntax for Control Structures
+Chapter 3: APCu
+Chapter 4: Array iteration
+Chapter 5: Arrays
+Chapter 6: Asynchronous programming
+Chapter 7: Autoloading Primer
+Chapter 8: BC Math (Binary Calculator)
+Chapter 9: Cache
+Chapter 10: Classes and Objects
+Chapter 11: Closure
+Chapter 12: Coding Conventions
+Chapter 13: Command Line Interface (CLI)
+Chapter 14: Comments
+Chapter 15: Common Errors
+Chapter 16: Compilation of Errors and Warnings
+Chapter 17: Compile PHP Extensions
+Chapter 18: Composer Dependency Manager
+Chapter 19: Constants
+Chapter 20: Contributing to the PHP Core
+Chapter 21: Contributing to the PHP Manual
+Chapter 22: Control Structures
+Chapter 23: Cookies
+Chapter 24: Create PDF files in PHP
+Chapter 25: Cryptography
+Chapter 26: Datetime Class
+Chapter 27: Debugging
+Chapter 28: Dependency Injection
+Chapter 29: Design Patterns
+Chapter 30: Docker deployment
+Chapter 31: Exception Handling and Error Reporting
+Chapter 32: Executing Upon an Array
+Chapter 33: File handling
+Chapter 34: Filters & Filter Functions
+Chapter 35: Functional Programming
+Chapter 36: Functions
+Chapter 37: Generators
+Chapter 38: Headers Manipulation
+Chapter 39: How to break down an URL
+Chapter 40: How to Detect Client IP Address
+Chapter 41: HTTP Authentication
+Chapter 42: Image Processing with GD
+Chapter 43: Imagick
+Chapter 44: IMAP
+Chapter 45: Installing a PHP environment on Windows
+Chapter 46: Installing on Linux/Unix Environments
+Chapter 47: JSON
+Chapter 48: Localization
+Chapter 49: Loops
+Chapter 50: Machine learning
+Chapter 51: Magic Constants
+Chapter 52: Magic Methods
+Chapter 53: Manipulating an Array
+Chapter 54: mongo-php
+Chapter 55: Multi Threading Extension
+Chapter 56: Multiprocessing
+Chapter 57: Namespaces
+Chapter 58: Object Serialization
+Chapter 59: Operators
+Chapter 60: Output Buffering
+Chapter 61: Outputting the Value of a Variable
+Chapter 62: Parsing HTML
+Chapter 63: Password Hashing Functions
+Chapter 64: PDO
+Chapter 65: Performance
+Chapter 66: PHP Built in server
+Chapter 67: PHP MySQLi
+Chapter 68: php mysqli affected rows returns 0 when it should return a positive integer
+Chapter 69: PHPDoc
+Chapter 70: Processing Multiple Arrays Together
+Chapter 71: PSR
+Chapter 72: Reading Request Data
+Chapter 73: Recipes
+Chapter 74: References
+Chapter 75: Reflection
+Chapter 76: Regular Expressions (regexp/PCRE)
+Chapter 77: Secure Remeber Me
+Chapter 78: Security
+Chapter 79: Sending Email
+Chapter 80: Serialization
+Chapter 81: Sessions
+Chapter 82: SimpleXML
+Chapter 83: SOAP Client
+Chapter 84: SOAP Server
+Chapter 85: Sockets
+Chapter 86: SPL data structures
+Chapter 87: SQLite3
+Chapter 88: Streams
+Chapter 89: String formatting
+Chapter 90: String Parsing
+Chapter 91: Superglobal Variables PHP
+Chapter 92: Traits
+Chapter 93: Type hinting
+Chapter 94: Type juggling and Non-Strict Comparison Issues
+Chapter 95: Types
+Chapter 96: Unicode Support in PHP
+Chapter 97: Unit Testing
+Chapter 98: URLs
+Chapter 99: Using cURL in PHP
+Chapter 100: Using MongoDB
+Chapter 101: Using Redis with PHP
+Chapter 102: Using SQLSRV
+Chapter 103: UTF-8
+Chapter 104: Variable Scope
+Chapter 105: Variables
+Chapter 106: WebSockets
+Chapter 107: Working with Dates and Time
+Chapter 108: XML
+Chapter 109: YAML in PHP
+Advance PHP
+************
+Chapter 1: PHP Objects & Classes 
+ Overview – The Initial Confusion of First Learning Object Oriented Theory 
+ Explanation of a Class 
+ Explanation of an Object
+ Instantiation
+ $this Variable
+ Access Modifiers 
+ Inheritance
+ Method Overriding 
+ Invoking Parent Methods
+ Horizontal Inheritance - Using Traits 
+ Encapsulation 
+ Polymorphism
+ Polymorphism vs. Meod Overloading 
+ Polymorphism vs. Method Overriding 
+ Late Binding / Dynamic Binding 
+Chapter 2: PHP Magic Methods 
+ __construct() 
+ Invoking Parent Constructor and Destructor 
+ __destruct()
+ __get(), __set(), __isset()
+ __call()
+ __sleep()
+ __wakeup()
+ __clone()
+
+Chapter 3: Abstract Classes & Methods  
+ abstract Keyword 
+ Extending sub-classes from an Abstract Base Class
+ Abstract Methods 
+ final Keyword  
+
+Chapter 4: Interfaces
+ PHP Interfaces 
+ Explanation of What Interfaces Are and Why They are Useful 
+ interface & implements Keywords 
+ Implementing Multiple Interfaces 
+ Programming to the Interface 
+ Design-by-Contract
+Chapter 5: Static Methods & Properties 
+ The static Modifier
+ The Scope Resolution Operator 
+ Static Properties 
+ Static Methods 
+ Singleton Pattern 
+ Late Static Binding
+ The static Keyword vs. the self Keyword  
+4
+Chapter 6: PHP Error Control & Exception Handling 
+ The Built-in Exception Class 
+ Throwing an Exception  
+ The try-catch-finally Block 
+ Setting the Desired Error Sensitivity Level
+ Setting Error Reporting
+ Error Reporting Sensitivity Levels
+ Displaying Startup Errors 
+ Logging Errors 
+ Identifying the Log File 
+ Setting the Maximum Log Line Length  
+ Ignoring Repeated Errors
+ Ignoring Errors Originating from the Same Location   
+ Storing Most Recent Error in a Variable  
+ Opening the Logging Connection
+ Logging Options
+ Closing the Logging Connection 
+Chapter 7: The Model, View, Controller Design Pattern  
+Understanding the Model-View-Controller Design Pattern  
+ Model
+ View 
+ Controller  
+The MCV URL Structure & URL Mapping 
+ Using the .htaccess File  
+The index.php File 
+The MVC Folder Structure 
+Custom MVC Application - Restaurant Menu Management Application  
+ Showing the Menu
+ Adding a Menu Item 
+ Assigning a Menu Item to a Menu 
+ Editing/Deleting Menu Items 
+Download the Source Code for the Custom MVC Application (Restaurant Menu Management Application) 
+Chapter 8: The Reflection API
+ Using the export Method 
+ The Reflection Class 
+
+Chapter 9: The PEAR Library 
+ Overview of PEAR  
+ Install PEAR on a Zend Framework Environment on Windows 
+ Install PEAR on a Windows XAMPP Environment  
+ Install PEAR on a Windows WAMP Environment 
+ Install PEAR on a Mac OS
+ Install PEAR on Linux
+ PEAR CAPTCHA Example  
+Chapter 10: Unit Testing with PHPUnit  
+ Overview of Unit Testing with PHPUnit 
+ Installing PHPUnit  
+ Install PHPUnit on Windows in Zend Framework Environment 
+ Install PHPUnit on Windows in XAMPP Environment  
+ Install PHPUnit on a Mac OS 
+ Install PHPUnit on Linux 
+ Test fixtures 
+ Test Phases
+ Writing Test Cases
+ Assertion Methods
+ Testing Data from HTML Form Submissions
+ Test suites  
+ Mocks and Stubs
+ TestCase Matcher Methods 
+5
+ Running PHPUnit from Eclipse Without Plug-ins 
+Chapter 11: SVN - Source Code Management with Subversion  
+ Windows 127
+ Setting Up a Subversion Server and Client on Windows  
+ Adding Your Source Code the First Time 
+ Creating a Copy to Work On  
+ Updating and Committing Your Working Copy
+ Setting up TortoiseSVN 
+ Trunk, Tags & Branches 
+ Exporting a Release 
+ Tagging & Branching a File  
+ Mac OS X137
+ Setting Up a Subversion Server and Client on Mac OS X  
+ Download Subversion 
+ Unpack and Install Subversion  
+ Add Subversion to Your Path  
+ Setting up the Subversion Repository  
+ Creating a Subversion Project 
+ Checking Out Files from Subversion
+ Updating and Committing Changes
+ Adding and Removing Files and Directories 
+ Tagging & Exporting a Release 
+ Branching & Merging a Project
+ Graphical User Interfaces 
+ Linux 
+ Setting Up a Subversion Server on a Linux Server  
+ Download Subversion 
+ Setting up the Subversion Repository 
+ Creating a Subversion Project  
+ Checking Out Files from Subversion  
+ Updating and Committing Changes 
+ Adding and Removing Files and Directories
+ Tagging & Exporting a Release
+ Branching & Merging a Project  
+
+ Theortical Concepts
+ *******************
+ Setting Up Your Development Stack 
+ AMP, XAMP/WAMP, MAMP, LAMP  
+ Zend Server CE Download (MySQL, Apache, PHP, and ZendServer), System Requirements & Installation 
+MySQL Workbench 5.2 CE Download & Installation 
+ Setting Up Your Integrated Development Environment (IDE)
+ Eclipse PDT (Helios Release) Download & Installation 
+
+PHP Applications Syllabus
+***************************
+PHP Introduction 
+PHP Installing Xampp Server 
+PHP Installing Laragon Server 
+PHP CLI and CLI Function Implementation
+PHP Code Structure
+PHP Echo & Print Statement
+PHP Variables 
+PHP Data Types
+PHP Comments
+PHP Constant Variable
+PHP Arithmetic Operators 
+PHP Assignment Operators  
+PHP Comparison Operators 
+PHP If Statement 
+PHP Logical Operators 
+PHP If else Statement 
+PHP If Elseif Statement  
+PHP Switch Statement 
+PHP Ternary Operator 
+PHP String Operators  
+PHP While Loop 
+PHP Do While Loop 
+PHP For Loop 
+PHP Nested Loop 
+PHP Continue & Break Statement 
+PHP Goto Statement 
+PHP Functions 
+PHP Functions with Parameters  
+PHP Functions with Returning Value 
+PHP Function Argument By Reference 
+PHP Variable Functions  
+PHP Recursive Function 
+PHP Global & Local Variable  
+PHP Array 
+PHP Associative Array 
+PHP Foreach Loop  
+PHP Multidimensional Array  
+PHP Multidimensional Associative Array  
+PHP Foreach Loop with List 
+PHP Array Count & Sizeof Function 
+PHP Array In_array & Array_search Function 
+PHP Array_replace & Array_replace_recursive 
+PHP Array_pop & Array_push 
+PHP Array_shift & Array_unshift  
+PHP Array_Merge & Array_Combine 
+PHP Array_Slice Function 
+PHP Array_Splice Function 
+PHP Array Key Functions  
+PHP Array Intersect Functions  
+PHP Array Diff & Udiff Functions 
+PHP Array_Values & Array_Unique 
+PHP Array_Column & Array_Chunk Function 
+PHP Array_Flip & Array_Change_Key_Case 
+PHP Array_Sum & Array_Product 
+PHP Array_Rand & Shuffle Function 
+PHP Array_Fill & Array_Fill_Keys
+PHP Array_Walk & Array_Walk_Recursive  
+PHP Array_Map Function 
+PHP Array_Reduce Function  
+PHP Array Sorting Function  
+PHP Array Traversing Function 
+PHP Array List Function  
+PHP Array Extract & Compact Function 
+PHP Array_Range Function  
+PHP Explode & Implode Function 
+PHP String Str_split & Chunk_split Function 
+PHP String LowerCase & UpperCase Functions  
+PHP String Length & Count Functions 
+PHP String Search & Find Position Functions 
+PHP String Search Functions 
+PHP String Substr Function  
+PHP String Replace Functions  
+PHP String Compare Functions 
+PHP String Strrev & Str_shuffle Functions 
+PHP String Str_Pad & Str_Repeat Functions 
+PHP String Trim & Chop Functions  
+PHP String Addslashes & Stipslashes Functions  
+PHP Htmlentities & Htmlspecialchars Functions 
+PHP Md5 & Sha1 Function 
+PHP Convert_uuencode & Convert_uudecode Function
+PHP bin2hex & hex2bin Function 
+PHP Chr & Ord Function 
+PHP Strip_tags & Wordwrap Function 
+PHP Math Min & Max Functions 
+PHP Math Ceil Floor Round Abs Functions 
+PHP Math Intdiv, Sqrt, Pow Functions 
+PHP Math Rand, Mt_rand & Lcg_value Functions  
+PHP Date Function  
+PHP Time 
+PHP Mktime & Gmmktime Function 
+PHP Date_create & Date_format Function  
+PHP Checkdate & Date_diff Function 
+PHP Date_add, Date_sub & Date_modify Function  
+PHP Getdate, Localtime, Gettimeofday Function 
+PHP Date_parse Function  
+PHP Strtotime, Strftime, Gmstrftime Function 
+PHP Date_time_set Function 
+PHP TimeZone Functions  
+PHP Include & Require Statement 
+PHP Include_once & Require_once  
+PHP $_GET $_POST $_REQUEST Variables  
+PHP $_SERVER Variable  
+PHP COOKIE Variable  
+PHP Session Variable  
+PHP FILES Variable & Move_uploaded_file  
+PHP Die & Exit Function  
+MySQL Introduction  
+MySQL Installation & Workbench  
+MySQL Create Table  
+MySQL Insert  
+MySQL INSERT Multiple Rows  
+MySQL Constraints  
+MySQL SELECT With WHERE Clause  
+MySQL AND, OR, NOT Operators  
+MySQL IN Operator  
+MySQL BETWEEN & NOT BETWEEN Operator  
+MySQL LIKE Operator & Wildcards  
+MySQL Regular Expression  
+MySQL ORDER BY & DISTINCT  
+MySQL IS NULL & IS NOT NULL  
+MySQL LIMIT & OFFSET  
+MySQL Count Sum Min Max Avg  
+MySQL UPDATE  
+MySQL COMMIT & ROLLBACK  
+MySQL DELETE  
+MySQL PRIMARY KEY & FOREIGN KEY  
+MySQL INNER JOIN  
+MySQL LEFT JOIN & RIGHT JOIN  
+MySQL CROSS JOIN  
+MySQL JOIN Multiple Tables  
+MySQL GROUP BY & HAVING Clause  
+MySQL SubQuery with EXISTS & NOT EXISTS  U
+MySQL UNION & UNION ALL  
+MySQL IF & CASE Statement 
+MySQL Arithmetic Functions  
+MySQL String Functions  
+MySQL String Functions  - II  
+MySQL Date Functions  
+MySQL Date Functions  - II 
+MySQL Time Functions  
+MySQL ALTER  
+MySQL DROP & TRUNCATE Table  
+MySQL VIEW  
+MySQL INDEX  
+PHP MySQL CRUD - Read Data  
+PHP MySQL CRUD - Create Data  
+PHP MySQL CRUD - Update Data  
+PHP MySQL CRUD - Update Data -II  
+PHP MySQL CRUD - Delete Data  
+PHP MySQL News Project Introduction  
+PHP News Project - Add Modify Delete Users  
+PHP News Project - Pagination  
+PHP News Project - Login & Logout  
+PHP News Project - Add & Show Post  
+PHP News Project - Update & Delete Post  
+PHP News Project - Delete Image from Folder  
+PHP News Project - Front & Single Page  
+PHP News Project - Category Page  
+PHP News Project - Author Page  
+PHP News Project - Search Page  
+PHP News Project - Recent Post  
+PHP News Project - Dynamic Title  
+PHP News Project - Website Settings Page  
+PHP News Project - Resolve Issues & Tips  
+PHP MySQLi Fetch Functions  
+PHP MySQLi Affected Rows  
+PHP MySQLi Error Functions  
+PHP Is Conditional Functions  
+PHP Filter Validations  
+PHP Sanitize Filter  
+PHP Sanitize Filter - II  
+PHP Filter_Var_Array Function  
+PHP Filter_Input Function  
+PHP FileSystem Functions  
+PHP FileSystem Functions  - II  
+PHP FileSystem Is Functions  
+PHP Chmod & Fileperms Functions  
+PHP File_put_contents & File_get_contents  
+PHP Glob Function  
+PHP Getcwd, Chdir, Scandir Functions  
+PHP OpenDir, ReadDir, CloseDir Functions  
+PHP Regular Expressions  
+PHP Regular Expressions  - II  
+PHP Preg_replace & Preg_split  
+PHP : How to Send Email  
+PHP Ajax Introduction  
+PHP Ajax Insert Records in Database  
+PHP Ajax Delete Records From Database  
+PHP Ajax Update Records of Database  
+PHP Ajax Live Search  
+PHP Ajax Pagination  
+PHP Ajax Load More Pagination  
+PHP Ajax Serialize Form Data  
+PHP Ajax - $.Get & $.Post Methods  
+JSON Introduction  
+Read JSON Data with jQuery 
+PHP Json_Encode Function  
+PHP Json_Decode Function  
+PHP Create Dynamic JSON File  
+PHP REST API Introduction  
+PHP REST API : Read Data  
+PHP REST API : Create & Update Data 
+PHP REST API : Delete & Search Data  
+PHP REST API in Web Page  
+PHP REST API in Web Page  - II 
+PHP REST API in Web Page  - III 
+PHP CoronaVirus API  
+PHP OOP Introduction 
+PHP OOP Introduction 
+PHP OOP Introduction  
+PHP OOP Constructor Function  
+PHP OOP Inheritance  
+PHP OOP Access Modifier  
+PHP OOP Overriding Properties & Methods  
+PHP OOP Abstract Class  
+PHP OOP Interfaces  
+PHP OOP Static Members  
+PHP OOP Late Static Binding  
+PHP OOP Traits  
+PHP OOP Traits Method Overriding  
+PHP OOP Type Hinting  
+PHP OOP Namespace 
+PHP OOP Method Chaining  
+PHP OOP Magic Methods  
+PHP OOP Destruct Method  
+PHP OOP Autoload Method  
+PHP OOP Get Method  
+PHP OOP Set Method  
+PHP OOP Call Method  
+PHP OOP CallStatic Method  
+PHP OOP Isset Method  
+PHP OOP Unset Method  
+PHP OOP toString Method  
+PHP OOP Sleep Method  
+PHP OOP Wakeup Method  
+PHP OOP Clone Method  
+PHP OOP Invoke Method  
+PHP Magic Constants  
+PHP OOP Conditional Functions  
+PHP OOP Get Functions  
+PHP MySQLi Object Oriented  
+PHP CRUD Class  
+PHP CRUD Class - Insert Method  
+PHP CRUD Class - Update Method  
+PHP CRUD Class - Delete Method  
+PHP CRUD Class - Select Method  
+PHP CRUD Class Pagination Method  
+PHP CRUD Class - Usage Example  
+PHP MySQLi Prepare Function  
+PHP MySQLi Prepare Function  - II  
+PHP E-commerce Shopping Website Project  
+PHP MySQL PDO  
+PHP MySQL PDO : Prepare Method  
+PHP PDO : Advance Fetch Styles  
+PHP Exception Handling  
+PHP PDO with Exception Handling  
+PHP PDO - Transaction  
+PHP PDO - bindColumn Method  
+PHP MySQL Read Data with JS Fetch Method  
+PHP MySQL Insert Data with JS Fetch Method  
+PHP MySQL Update Data with JS Fetch Method  
+PHP MySQL Delete Data with JS Fetch Method 
+PHP MySQL Search Data with JS Fetch Method  
+
+
+Database MYSQL
+****************
+MySQL Introduction 
+MySQL Installation & Workbench 
+MySQL Create Table 
+MySQL Insert 
+MySQL INSERT Multiple Rows 
+MySQL Constraints 
+MySQL SELECT With WHERE Clause 
+MySQL AND, OR, NOT Operators 
+MySQL IN Operator
+MySQL BETWEEN & NOT BETWEEN Operator 
+MySQL LIKE Operator & Wildcards 
+MySQL Regular Expression 
+MySQL ORDER BY & DISTINCT 
+MySQL IS NULL & IS NOT NULL 
+MySQL LIMIT & OFFSET 
+MySQL Count Sum Min Max Avg 
+MySQL UPDATE 
+MySQL COMMIT & ROLLBACK 
+MySQL DELETE 
+MySQL PRIMARY KEY & FOREIGN KEY 
+MySQL INNER JOIN 
+MySQL LEFT JOIN & RIGHT JOIN 
+MySQL CROSS JOIN 
+MySQL JOIN Multiple Tables 
+MySQL GROUP BY & HAVING Clause 
+MySQL SubQuery with EXISTS & NOT EXISTS 
+MySQL UNION & UNION ALL 
+MySQL IF & CASE Statement 
+MySQL Arithmetic Functions 
+MySQL String Functions 
+MySQL String Functions 
+MySQL Date Functions 
+MySQL Date Functions 
+MySQL Time Functions 
+MySQL ALTER 
+MySQL DROP & TRUNCATE Table 
+MySQL VIEW 
+MySQL INDEX 
+
+Stored Procedures in Mysql
+****************************
+#1 - Introduction, Features, Drawbacks in detail
+#2 - Create Procedure Statement - Stored Procedur
+#3 - Create Stored Procedure using PhpMyAdmin Interface
+#4-Variables & Parameters | Variables Detailed - Procedure
+#5-Parameter & Modes in Stored Procedure| IN Mode detailed
+#6 - OUT Parameter mode detailed concept in Procedure
+#7 - More About OUT Parameter mode detailed concep
+#8 - INOUT Parameter mode in MySQL Stored procedure
+#9 - Conditional IF ELSEIF statements in Stored Procedure
+#10 - Conditional CASE statements in Stored Procedure
+#11 - Loop Statements MySQL Stored Procedure | While Loop
+#12 - Loop Statements MySQL Stored Procedure | Repeat Loop
+#13 - Loop, Iterate, Leave Statements in Stored Procedure
+#14 - Basics of Cursor in MySQL Stored Procedure | Cursor
+#15 - Another Example of Cursor in MySQL Stored Procedure
+#16 - Basic Commands for MySQL Stored Procedure
+#17 - Basic Concept MySQL Stored Functions
+#18 - More Examples of MySQL Stored Functions
+#19 - PHP MySQLi Stored Procedure | Insert Data
+#20 - PHP MySQLi Stored Procedure | Update & Delete Data
+#21 - PHP MySQLi Stored Procedure | Read & List Data
+
+PHP With Ajax Example Applications:-
+***************************************
+
+PHP Ajax Introduction 
+PHP Ajax Insert Records in Database 
+PHP Ajax Delete Records From Database 
+PHP Ajax Update Records of Database 
+PHP Ajax Live Search 
+PHP Ajax Pagination 
+PHP Ajax Load More Pagination 
+PHP Ajax Serialize Form Data 
+PHP Ajax - $.Get & $.Post Methods 
+JSON Introduction 
+Read JSON Data with jQuery 
+PHP Json_Encode Function 
+PHP Json_Decode Function 
+PHP Create Dynamic JSON File 
+PHP REST API Introduction 
+PHP REST API : Read Data 
+PHP REST API : Create & Update Data 
+PHP REST API : Delete & Search Data 
+PHP REST API in Web Page 
+PHP REST API in Web Page 
+PHP REST API in Web Page 
+PHP CoronaVirus API 
+PHP Ajax Dependent Select Box 
+PHP Ajax Delete Multiple Data Using Checkbox 
+PHP Ajax Image Upload & Remove 
+PHP Ajax Load Records Using SelectBox 
+PHP Ajax Load Records Using SelectBox 
+PHP Ajax AutoComplete Textbox 
+PHP Ajax AutoComplete Textbox 
+PHP Ajax Insert Checkbox Values in Database 
+PHP Ajax Insert Checkbox Values in Database 
+PHP Ajax - Range Slider Search 
+PHP Ajax - Date Range Search 
+PHP Ajax - Drag & Drop File Upload with DropZonejs 
+PHP MySQL Read Data with JS Fetch Method 
+PHP MySQL Insert Data with JS Fetch Method 
+PHP MySQL Update Data with JS Fetch Method 
+PHP MySQL Delete Data with JS Fetch Method 
+PHP MySQL Search Data with JS Fetch Method 
+
+Laravel Syllabus
+*****************
+
+#1 - Requirements, Installation of Laravel 8
+#2 - About Folder Structure in details
+#3 - Understand the Landing page
+#4 - Create First Program in Laravel 8
+#5 - Routing in Laravel 8 #1
+#6 - Routing in Laravel 8 #2
+#7 - Complete Details about Views in Laravel 8
+#8 - About Blade Template Engine in Laravel #1
+#9 - About Blade Template Engine in Laravel #2 @include @json ...
+#10 - Creating Layouts in Laravel | What & Why we use Layouts ?
+#11 - Components in Laravel 8 | How to Create & Load to Use (#1)
+#12 - Passing Attributes/Values to Component in Laravel (#2)
+#13 - Slots & Inner Slots of Component in Laravel (#3)
+#14 - What are Inline Components in Laravel --inline (#4)
+#15 - Create & Submit a Form to Server in very Detailed Steps
+#16 - Form Validation validate() Method & Rules #1
+#17 - Form Request Class - validated() Method #2
+#18 - Form Validation using Validator Facade
+#19 - How to Keep Old value to Form While Form Validation
+#20 - Basics of Database Connection of Laravel
+#21 - Running Database Raw Queries (DB::select(), DB::insert())
+#22 - Running Database Raw Queries (DB::update(), DB::delete())
+#23 - What is Migration in Laravel & How to use it ?
+#24 - Add Columns to Table using Migration & Column Modifiers
+#25 - Basics of Seeders in Laravel. What is Seeder ?
+#26 - Faker Library | How to Use Faker Library in Laravel
+#27 - Basics of Laravel Factory & Data Seed Using Factory
+#28 - Basics of Laravel Model & Role of it's member variables
+#29 - Create & Save Form Data to Database Table
+#30 - Settings of Session Flash Message & a Redirection to Form
+#31 - Model With Database - Selecting Data from Table
+#32 - Render Database Data to Layout | Model data to Layout
+#33 - Model with Database - Delete Operation | Laravel Model
+#34 - Model with Database | Update Operation | Laravel Model
+#35 Query Builder in Laravel - Select Statement
+#36 Query Builder in Laravel - Select Queries - AND OR Operators
+#37 Query Builder in Laravel - Joins, Left Join, Right Join
+#38 Query Builder in Laravel - Insert & Update Methods
+#39 Query Builder in Laravel - Update, Delete & Truncate Methods
+#40 Complete Basics of Middleware & About Global Middleware.
+#41 About Group Middleware & How to use it in Laravel?
+#42 About Route Middleware & How it is different from Group?
+#43 How can Consume GET REST APIs | Http Client | Http::get()
+#44 Localization in Laravel 8 | Multi Language Website Concept
+#45 Concept of Accessors in Laravel 8 | Step by Step 
+#46 Concept of Mutators in Laravel 8
+#47 Eloquent Relationship in Laravel 8 | One to One & Inverse
+#48 One to Many Relationship & Inverse belongsTo() in laravel
+#49 Has One Through Relationship in Eloquent Laravel
+#50 Has Many Through Relationship in Eloquent Laravel
+#51 Many to Many Relationship in Eloquent Laravel
+#52 How To Work with Column name in Eloquent Relationship
+#53 Laravel Authentication Using Breeze #1 | Basic overview
+#54 Laravel Authentication Breeze Scaffolding Files/Features #2
+#55 Laravel Authentication - JetStream with Livewire Package #1
+#56 About Scaffolding Files - JetStream with Livewire Auth
+#57 JetStream with Inertia - Scaffolding Files & Authentication
+#58 What is Laravel Stub | Laravel stub Customization
+#59 Route Model Binding in Laravel | Route Model Binding 
+#60 URL Generation Helper Functions in Laravel
+#61 About Resource Controller in Laravel #1
+#62 Laravel Test Application - CRUD Application Demo (1)
+#63 CRUD Application in Laravel - Settings & Configurations (2)
+#64 CRUD Application in Laravel - Layout Creation - List Page (3)
+#65 CRUD Application in Laravel - Layout Creation - Add Page (4)
+#66 CRUD Application - Save Data, Flash Message, Redirection (5)
+#67 CRUD Application - List Data From Database
+#68 CRUD Application - Render Edit Form Layout with Data
+#69 CRUD Application - Update Data & Method Spoofing in Laravel
+#70 CRUD Application - Delete Operation | Method Spoofing
+#71 PHP Artisan Tinker With Application Model | First Session
+#72 PHP Artisan Tinker With Application DB Class
+#73 About Model Events in Laravel
+#74 Handle Model Events Using Laravel Event
+#75 Handle Model Events Using Laravel Event & Listener
+#76 Handle Model Events Using Laravel Observer
+#77 Default & Custom HTTP 404 Error Page in Laravel
+#78 Concept of "Local Scope" in Laravel Model
+#79 Concept of "Global Scope" in Laravel Model | Local Vs Global
+#80 Concept of "Anonymous Global Scope" in Laravel Model
+#81 Create Custom Artisan Console Command
+#82 Interact Custom Artisan Command With Model
+#83 Send Email Using Gmail SMTP in Laravel
+#84 Send Email Using Gmail SMTP Markdown Email Template
+#85 Customization of Markdown Email Template | Step by step guide
+#86 How to Work with Multiple Database Connections in Laravel
+#87 Query Builder & Migration with Multiple Databases in Laravel
+#88 What are Helpers and How to use it in Laravel
+#89 What are Route Prefixes & How to use it in Application
+#90 How to Work with Multiple Routes Files in Application
+#91 Concept of Factory, Tinker & Pagination in Laravel 8
+#92 Concept of Trait in Laravel 8
+#93 Multi Authentication in Laravel 8 | Role Wise Login Access
+#94 Working with Voyager Admin Panel in Laravel
+#95 API Testing Tool in Laravel | API Testing Composer Package
+#96 Process Ajax Request in Laravel 8 | Form Validation by Ajax
+#97 Process Ajax Request in Laravel 8 | Save Form Data by Ajax
+#98 Call MySQL Stored Procedure in Laravel | Usage of Procedure
+#99 API Development in Laravel 8 Using Sanctum Authentication
+#100 API Development in Laravel 8 Using JWT Authentication
+#101 Generate PDF and Attach Logo Using DomPDF in Laravel
+#102 How To Generate Unique Slug For Number of Items in Laravel
+#103 Email Verification Login and Register  Laravel 8 (1)
+#104 Email Verification Login and Register  Laravel 8 (2)
+#105 Email Verification Login and Register  Laravel 8 (3)
+#106 Barcode Generator Composer Package in Laravel
+#107 Custom Login And Registration in Laravel 8
+#108 How To Create Facade Class in Laravel 8 | Facade Class
+#109 Add Watermark Text on Images in Laravel 8 | Intervention
+#110 How To Install Vue Js | Create First Vue Component Laravel
+#111 View Logs Using LogViewer Package Laravel 8 
+#112 Find Laravel Version in Application | How Many Methods
+#113 How To Work with Session Timeout in Laravel 8
+
+FAQ 500+ Interview Question
+****************************
+

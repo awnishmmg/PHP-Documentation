@@ -1,0 +1,33 @@
+{
+  "collection":"student",
+  "author":"awnish Kr",
+  "date":"27-jan-2022",
+  "time":"10:02:00 Am",
+  "data":[
+	{
+		"roll":1001,
+		"name":"awnish",
+		"marks":50
+	},
+	{
+		"roll":1002,
+		"name":"ravi",
+		"marks":80
+	},
+	{
+		"roll":1003,
+		"name":"suraj",
+		"marks":80
+	},
+	{
+		"roll":1004,
+		"name":"nishant",
+		"marks":90
+	},
+	{
+		"roll":1005,
+		"name":"Dubey",
+		"marks":100
+	}
+  ]
+}
