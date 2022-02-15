@@ -1,0 +1,110 @@
+http module in nodejs :-
+http modules is the real module which will actually node use nodejs coding for server side
+as we know that, node is said to be it is servide side it is because of http module.
+
+if we remove http module from node.js the entire nature of node.js will be removed.
+
+What is main purpose of http module.
+***********************************
+the main purpose of the http module is handle request coming from the browser,
+perform any actions, and return the response to the same browser, from where the
+request is coming.
+
+How to use http module
+***********************
+http is module or package?
+it is module.
+package : externally install using npm install from npm server.
+module : inbuilt we need not to install it externally.
+
+How http module Architecture works
+***********************************
+Please refer to the figure.
+
+1. request Object : Any Instance name
+2. response Object : Any Instance name
+
+Request -----> http ----> response
+All the data send from the browser (firefox,chrome,edge) will be counted as request.
+All the data send from the server to the browser will be counted as response.
+
+request object can holds, Query string, cookies,information,
+formdata,postdata,getdata and any from information send via browser.
+headers and other client side information.
+
+Eg: cookies and session
+cookies : client ---> request Object
+session : server ---> response Object
+
+State of server:-
+By default state of server is sleeping
+1. sleep : browser inactive
+2. listen : browser active
+when ever browser is active ---> it will begin as a service, process,
+and Operating System will assign some port for execution.
+
+Response Pooling:-
+******************
+server will never the response as soon as the, request is made.
+All Request Are made ----> server (process) ---> processing end
+Then it will return response ---> Output
+
+What are steps to create a server
+********************************
+Project : Angular or React
+Server.js is file actual which will http module to create a server
+
+1. Require the http module and create the Response Object.
+    var http = require("http")
+2. the http module has inbuilt method called createServer which can
+    be used to server instance.
+    http.createServer(function(request,respose))
+3.  After the request and response we can send any request from
+    the browser, to server and server will send the Output
+    as soon as response processing get finished or ended.
+    response.end()
+4. At intial level the server is at, sleep mode we need to enable
+    to listen to port.
+    server.listen(8000)
+
+    Note:: for windows machine you can use any port from 1024 to 65532
+
+5. How to launch server : node server.js
+    command line will become server
+    it is waiting for the server to response and listen to the request.
+
+
+How to make the request:-
+***********************
+we call url to send the request from browser
+http://localhost:8000
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,28 @@
+Working with mulitple Modules
+*******************************
+we know that, node js is all about multiple Modules,
+so we our major challenge how to work work multiple modules 
+simultenosuly
+
+1. fs module : it will interact with the file system.
+2. http module : it will handle the request and response from browser to server.
+
+What is steps:-
+1. Browser ---> Request --> http module --> fs module ---> file system 
+--- file pointer ---> handle the memory(buffer) using OS --->
+after reading the file ---> it will send the data to the browser using http
+module ---> and this request will be send to the browser to display
+to content to the browser.
+
+What is Entire Order of execution of Code.
+1. create server
+2. listen to server
+3. make the request to the Browser
+4. handle the callback for the response
+
+
+
+
+
+
+

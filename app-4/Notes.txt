@@ -1,0 +1,89 @@
+Memeber of Request and Response
+1. Member of Response:-
+    1. response.write()
+
+        it is used to send or write some data to the browser
+        1. string, number, json
+        But you cannot write Object For that you have to convert
+        Object data into json 
+        JSON.stringify()
+
+    2. response.end()
+
+        it is used to specifiy the browser that response 
+        has been ended from server please do-not wait...
+
+    3. response.setHeader()
+         it is used to setHeader to the response of the browser.
+         it is basically key and value pairs
+         Few of the Headers Example are
+         1. X-CSRF-TOKEN : value
+         2. X-FRAME : value
+         3. HTTP_REQUEST_AGENT : value
+         4. CONTENT_TYPE : value
+         5. ALLOW_REQUEST_METHOD  : value
+
+         ...
+         ...
+         ...
+         ...
+         ...
+         ...
+
+
+    4. response.writeHead()
+        it is used to set the status code to the Browser.
+
+whenever you are going to sent some request from browser server.
+    1. startline : (Http status + Status Description)
+            Example : 
+                    Status 200 404
+                    http/1.1 or 2.1 
+                    state of connection : active or closed
+
+    2. header : it may be defined the agreement made b/w browser and server
+        before sending the actual request.
+
+        for example:-
+        1. Boy A  Girl B
+                agreement : 
+                    Dowry
+                    cash,
+                    few aggrements
+                    Girl A Jobs 
+                    Boy B Jobs x
+
+            Before A Weds B
+
+            Negotiation => Mutual Aggrement.
+
+            server ---> header
+            Browser ---> header
+
+            Server ---> Browser ---> Response Headers.
+            Browser ---> Server ---> Request Headers.
+
+    3. body : it is actual data
+
+Member of Request Object
+************************
+1. request.url  : Endpoint Url
+    It give the url
+    http://localhost:7070 = /
+    http://localhost:7070/login = /login
+    http://localhost:7070/register = /register
+
+2. request.method
+    GET,PUT,PATCH,DELETE,POST : http methods
+    This is mapped to CRUD
+
+    GET : Read data
+    POST : Create the data
+    PUT/PATCH : update the data
+    DELETE : delete the data
+
+3. request.headers
+    All the set of Header you can and get using keys
+    and Note All the keys should be in the lower case.
+
+    
