@@ -1,0 +1,43 @@
+Getting started with Express Module,
+Express module in, node is just yamuna express way
+
+a location b location travel
+there are possible ways 
+1. any way
+2. national high way (express way)
+
+what is express way?
+the fastest way to travel
+
+It will provide ready made method to handle and request,response.
+Easy then writing core concepts, 
+Express module is build upon over the top of the, http-module.
+it provide event binding on the routes  
+you can execute a specific function on the basis of routes 
+or urls.
+it uses, mvc archicecture
+it is type of design pattern. and this design pattern is very very useful,
+but building medium to large scale applications.
+
+steps to, How to create the first application:-
+**********************************************
+1.  lets create a application express module.
+2.  now we create package.json file and add dependency for express
+    module.
+    1.  package.json manually create
+    2.  by npm init command
+3. we create the reference instance object of express module. 
+4. we then, create allocate the application with express functions.
+5. bind the methods and urls,
+
+
+
+
+
+
+
+
+
+
+
+

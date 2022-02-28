@@ -1,0 +1,137 @@
+Working with mongoose package:-
+*****************************
+
+What is mongoose package package :-
+1. mongoose is a package(node) used to connect Node App to Mongodb App
+Consider I have App
+2. mongoose package provide inbuilt models to interact with collection
+   to perform crud related Operations.
+
+Node App ----> Mongo-db
+		Collection Behalf (mongodb community version.)
+
+you cannot directly connect it
+There should be some package which can convert node Asynchronous calls(Event Loops Calls) to mongodb calls we use some external package called as mongoose package.
+
+How to install mongoose package:-
+you can install from npm server
+command
+npm install
+
+we need create package.json file for installing the package
+How to create package.json for mongoose library
+
+{
+	"name":"crud",
+	"license":"MIT",
+	"repository":"none",
+	"version":"1.0.0",
+	"description":"Crud Application for Demo Purpose",
+	"dependencies":{
+		"mongoose":"6.1.10"
+	}
+
+}
+
+
+As soon as command npm install
+node_modules 
+	mongoose package
+	package.json
+		|------>dependencies
+	we will many other package
+	Transitive Dependencies
+	package A ---> Dependent ---> Package B
+package.json
+	Information
+
+What is difference B/w package.json and package.lock.json
+package.json : current package information for developement
+package.lock.json : all other package information connected to current package will be utilise 
+in the developement use.
+
+Entire Package Upgrade : package.lock.json Delete Create new package.json mongoose version change
+Entire package New
+
+Older version maintain
+package.json delete and npm install package.lock.json older version information, it will install
+older package.
+
+How to connect to mongodB
+1. Run mongod server
+2. Run mongoclient to check databases,collection,data
+	
+Steps to connect
+*****************
+crud
+ |node_modules
+	|mongoose (package)
+		|mongoose.js (module)
+require the package mongoose from node modules and create reference Object
+1. var mongoose = require("mongoose")
+2. require is okay, so, you can get reference object mongoose
+3. create Schema
+4. Create Model
+5. Finally Connect
+6. Perform Operation using callbacks
+7. Close the Connection inside callbacks
+
+Interview Question?
+Why do we close connection, using callbacks it because if you dont do it inside callbacks
+you will get a error called, as Topology Destroyed Error.
+
+Data Types of mongoose
+**********************
+Types: {
+      		String: [Function],
+      		Number: [Function],
+      		Boolean: [Function],
+      		DocumentArray: [Function],
+      		Subdocument: [Function],
+      		Array: [Function],
+      		Buffer: [Function],
+      		Date: [Function],
+      		ObjectId: [Function],
+      		Mixed: [Function],
+      		Decimal: [Function],
+      		Decimal128: [Function],
+      		Map: [Function],
+      		Oid: [Function],
+      		Object: [Function],
+      		Bool: [Function],
+      		ObjectID: [Function]
+},
+
+
+
+What is use of DataType:-
+***********************
+moongoose package has Data Type to create a schema to Handle Document Collections.
+
+Collection--> Array ---> Object : {key:value}
+Note this key has specific type
+_id : ObjectId()
+empid:1001 : Number
+name :"ravi" : String
+
+How to create a Schema for Collection Object
+*********************************************
+var empSchema = new mongoose.Schema({emp_id:Number,emp_name:String,class:String});
+
+Creating Models:-
+*****************
+What are Models : Models are COmponent which are responsible for database Operations.
+Eg:-
+var empModel = new mongoose.Model("emp");
+Syntax
+var modelname = new mongoose.Model("collectionname");
+
+How to connect:-
+*****************
+mongoose.connect("mongodb://localhost/company",empSchema);
+Syntax
+mongoose.connect("mongodb://ipname/dbname",<schema-name>);
+
+Run the Application:-
+1. node read.js
+
